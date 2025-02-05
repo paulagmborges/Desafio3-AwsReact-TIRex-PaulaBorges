@@ -17,6 +17,10 @@ export default {
       },
       lineHeight: {
         '24': '24px',
+        '52':'52px',
+        '30':'30px',
+        '48':'48px',
+        '36':'36px',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
