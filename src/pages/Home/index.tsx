@@ -1,8 +1,8 @@
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
-import BannerSection from "../../components/HomeSection/BannerSection"
-import BrowseSections from "../../components/HomeSection/BrowseSection";
-
+import BannerSection from "../../components/homeSection/BannerSection"
+import BrowseSections from "../../components/homeSection/BrowseSection";
+import Inspiration from "../../components/homeSection/SectionInspiration/Inspiration";
 
 const HomePage = () => {
   return (
@@ -10,7 +10,7 @@ const HomePage = () => {
       <Header />
       <BannerSection />
       <BrowseSections />
-
+      <Inspiration />
       <Footer />
 
     </div>
