@@ -1,4 +1,4 @@
-/* Estilo base das imagens */
+
 .carousel-image {
     width: 372px;
     height: 486px;
@@ -6,14 +6,14 @@
     border-radius: 8px;
   }
   
-  /* Aumentar a imagem ativa */
+ 
   .splide__slide.is-active .carousel-image {
     width: 404px;
     height: 582px;
     transition: transform 0.3s ease-in-out;
   }
   
-  /* Estilo para o container das imagens */
+ 
   .image-container {
     position: relative;
   }
@@ -48,7 +48,7 @@
      line-height: 33px;
   }
   
-  /* Exibir a caixinha de texto somente na imagem que está na primeira posição */
+ 
   .splide__slide.is-active .carousel-message {
     display: block;
     opacity: 1;
@@ -58,31 +58,31 @@
 .square-button {
     width: 48px;
     height: 48px;
-    background-color:#B88E2F ;  /* Cor de fundo azul */
+    background-color:#B88E2F ;  
     border: none;
     display: flex;
     justify-content:center;
     align-items: center;
     cursor: pointer;
-    border-radius: 1px;  /* Bordas retas */
+    border-radius: 1px;  
     transition: background-color 0.3s ease;
-    position: absolute;  /* Posiciona o botão em relação ao contêiner */
-    top: 80%;  /* Alinha verticalmente ao meio da caixa de mensagem */
-    left: calc(60% + 100px);  /* Coloca o botão ao lado direito da caixinha */
+    position: absolute;  
+    top: 80%;  
+    left: calc(60% + 100px);  
     transform: translateY(-50%);
-    opacity: 0;  /* Inicialmente invisível */
+    opacity: 0;  
   }
   
-  /* Exibe o botão apenas no primeiro slide */
+ 
   .splide__slide.is-active .square-button {
-    opacity: 1;  /* Torna o botão visível no slide ativo */
+    opacity: 1;  
   }
   
   .square-button:hover {
-    background-color: #B88E2F;  /* Cor ao passar o mouse */
+    background-color: #B88E2F;  
   }
   
-  /* Ícone vetor dentro do botão */
+
   .vector-icon {
     width: 20px;
     height: 20px;
