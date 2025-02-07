@@ -1,22 +1,77 @@
 {
     "products": [
-        {
-            "id": 1,
-            "imageUrl": "/assets/product1.jpg",
-            "titulo": "Pingky",
-            "subtitulo": "Cute bed set",
-            "preco": "Rp 7.000.000",
-            "tag": "-50%",
-            "precoSemDesconto": "14.000.000"
-        },
-        {
-            "id": 2,
-            "imageUrl": "/assets/product2.jpg",
-            "titulo": "Syltherine",
-            "subtitulo": "Stylish cafe chair",
-            "preco": "Rp 2.500.000",
-            "tag": "-30%",
-            "precoSemDesconto": "Rp 3.500.000"
-        }
+      {
+        "id": 1,
+        "imageUrl": "/images/product1.svg",
+        "titulo": "Pingky",
+        "subtitulo": "Cute bed set",
+        "preco": "Rp 7.000.000",
+        "tag": "-50%",
+        "precoSemDesconto": "Rp 14.000.000"
+      },
+      {
+        "id": 2,
+        "imageUrl": "/images/product2.svg",
+        "titulo": "Syltherine",
+        "subtitulo": "Stylish cafe chair",
+        "preco": "Rp 2.500.000",
+        "tag": "-30%",
+        "precoSemDesconto": "Rp 3.500.000"
+      },
+      {
+        "id": 3,
+        "imageUrl": "/images/product3.svg",
+        "titulo": "Potty",
+        "subtitulo": "Minimalist flower pot",
+        "preco": "Rp 500.000",
+        "tag": "New",
+        "precoSemDesconto": "Rp 14.000.000"
+      },
+      {
+        "id": 4,
+        "imageUrl": "/images/product4.svg",
+        "titulo": "Respira",
+        "subtitulo": "Outdoor bar table and stool",
+        "preco": "Rp 500.000",
+        "tag": "New",
+        "precoSemDesconto": "Rp 14.000.000"
+      },
+      {
+        "id": 5,
+        "imageUrl": "/images/product5.svg",
+        "titulo": "Syltherine",
+        "subtitulo": "Stylish cafe chair",
+        "preco": "Rp 2.500.000",
+        "tag": "-30%",
+        "precoSemDesconto": "Rp 3.500.000"
+      },
+      {
+        "id": 6,
+        "imageUrl": "/images/product6.svg",
+        "titulo": "Lolito",
+        "subtitulo": "Luxury big sofa",
+        "preco": "Rp 7.000.000",
+        "tag": "-50%",
+        "precoSemDesconto": "Rp 14.000.000"
+      },
+      {
+        "id": 7,
+        "imageUrl": "/images/product7.svg",
+        "titulo": "Respira",
+        "subtitulo": "Outdoor bar table and stool",
+        "preco": "Rp 500.000",
+        "tag": "New",
+        "precoSemDesconto": ""
+      },
+      {
+        "id": 8,
+        "imageUrl": "/images/product8.svg",
+        "titulo": "Leviosa",
+        "subtitulo": "Stylish cafe chair",
+        "preco": "Rp 12.500.000",
+        "tag": "",
+        "precoSemDesconto": "Rp 2.000.000"
+      }
     ]
-}
+  }
+  
