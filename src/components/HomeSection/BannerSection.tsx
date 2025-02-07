@@ -3,7 +3,7 @@ import bannerImage from '../../assets/img-home/bg-sectionBanner.svg';
 const BannerSection = () => {
   return (
     <main
-      className="flex bg-custom font-poppins justify-end min-w-[1440px] h-[716px]"
+      className="flex bg-custom font-poppins justify-end  h-[716px]"
       style={{ backgroundImage: `url(${bannerImage})` }}
     >
       <div 
