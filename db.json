@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "imageUrl": "/assets/product1.jpg",
+            "titulo": "Pingky",
+            "subtitulo": "Cute bed set",
+            "preco": "Rp 7.000.000",
+            "tag": "-50%",
+            "precoSemDesconto": "14.000.000"
+        },
+        {
+            "id": 2,
+            "imageUrl": "/assets/product2.jpg",
+            "titulo": "Syltherine",
+            "subtitulo": "Stylish cafe chair",
+            "preco": "Rp 2.500.000",
+            "tag": "-30%",
+            "precoSemDesconto": "Rp 3.500.000"
+        }
+    ]
+}

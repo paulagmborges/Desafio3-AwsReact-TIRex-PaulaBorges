@@ -1,0 +1,90 @@
+
+.carousel-image {
+    width: 372px;
+    height: 486px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+ 
+  .splide__slide.is-active .carousel-image {
+    width: 404px;
+    height: 582px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+ 
+  .image-container {
+    position: relative;
+  }
+  
+  .carousel-message {
+    display: none;
+    position: absolute;
+    width: 217px;
+    height: 130px;
+    top: 70%;
+    left: 30%;
+
+    transform: translate(-50%, -50%);
+    padding: 10px 10px;
+    background-color: #FFFFFFB8;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .bedRoom{
+    font-family: 'poppins';
+    color:#3A3A3A;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500 ;
+  }
+  .inner{
+    font-family: 'poppins';
+     font-size: 28px;
+     font-weight: 600;
+     color:#3A3A3A;
+     line-height: 33px;
+  }
+  
+ 
+  .splide__slide.is-active .carousel-message {
+    display: block;
+    opacity: 1;
+  }
+
+
+.square-button {
+    width: 48px;
+    height: 48px;
+    background-color:#B88E2F ;  
+    border: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 1px;  
+    transition: background-color 0.3s ease;
+    position: absolute;  
+    top: 80%;  
+    left: calc(60% + 100px);  
+    transform: translateY(-50%);
+    opacity: 0;  
+  }
+  
+ 
+  .splide__slide.is-active .square-button {
+    opacity: 1;  
+  }
+  
+  .square-button:hover {
+    background-color: #B88E2F;  
+  }
+  
+
+  .vector-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
