@@ -11,24 +11,26 @@ export interface Product {
   tag?: string;
   titulo: string;
   subtitulo?: string;
-  preco: string ;
+  preco: string;
   precoSemDesconto?: string | number;
+
 }
 
 interface ListProductProps {
   title: string;
   rows: number;
+  paginate?: boolean
 }
 
-function ListProductComponent({ title, rows }: ListProductProps) {
-  // Agora chamamos o hook corretamente com o objeto
-  const { products: displayedProducts, loading, error } = useProducts({ rows });
+function ListProductComponent({ title, rows, paginate = false }: ListProductProps) {
+
+  const { products: displayedProducts, loading, error } = useProducts();
 
   const [currentPage, setCurrentPage] = useState(1);
-  const pageSize = 16;
+  const pageSize = 4 * rows
   const repeatProducts = 54;
 
-  // Se os produtos ainda não carregaram, retorna estado inicial
+
   if (loading) return <p>Carregando produtos...</p>;
   if (error) return <p>Erro ao carregar produtos.</p>;
 
@@ -73,13 +75,17 @@ function ListProductComponent({ title, rows }: ListProductProps) {
           <p>Nenhum produto encontrado</p>
         )}
       </div>
+      {
+        paginate && (
+          <Pagination
+            totalCount={repeatedProducts.length}
+            pageSize={pageSize}
+            currentPage={currentPage}
+            onPageChange={setCurrentPage}
+          />
+        )
+      }
 
-      <Pagination
-        totalCount={repeatedProducts.length}
-        pageSize={pageSize}
-        currentPage={currentPage}
-        onPageChange={setCurrentPage}
-      />
     </div>
   );
 }

@@ -12,7 +12,7 @@ const Filter = () => {
   };
 
   const closePopup = () => {
-    setIsPopupOpen(false); // Fechando a função corretamente
+    setIsPopupOpen(false); 
   };
 
   return (
@@ -50,7 +50,7 @@ const Filter = () => {
         />
       </div>
 
-      {/* Condicionalmente renderizando o popup */}
+      
       {isPopupOpen && <FilterPopup closePopup={closePopup} />}
     </div>
   );

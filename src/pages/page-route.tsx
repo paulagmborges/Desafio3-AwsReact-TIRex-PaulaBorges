@@ -7,7 +7,7 @@ export const PageRoute = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
-            <Route path="/prodcut/:id" element={<ProductDetail />} />
+            <Route path="/produto/:id" element={<ProductDetail />} />
            
         </Routes>
     );

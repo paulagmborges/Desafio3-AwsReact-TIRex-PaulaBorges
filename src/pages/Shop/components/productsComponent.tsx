@@ -3,7 +3,7 @@ import ListProductComponent from '../../../components/productCard/listCardCompon
 const ProductsComponent = () => {
   return (
     <div>
-        <ListProductComponent title="" rows={3} />
+        <ListProductComponent title="" rows={4} paginate={true} />
     </div>
   )
 }

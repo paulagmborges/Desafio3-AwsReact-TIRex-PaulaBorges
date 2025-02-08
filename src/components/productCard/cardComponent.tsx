@@ -7,7 +7,8 @@ interface CardProps {
     preco: string
     precoSemDesconto?: string
 }
- 
+
+
 export default function CardComponent({ imageUrl, tag, titulo, subtitulo, preco, precoSemDesconto }: CardProps) {
     return (
       <div className="w-[295px] h-[446px] flex gap-2 flex-col bg-[#F4F5F7] font-poppins p-2 relative">

@@ -1,23 +1,23 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-interface Product {
+export interface Product {
   id: number;
   imageUrl: string;
   titulo: string;
   subtitulo: string;
-  preco: string;  // Supondo que o preço é uma string e precisa ser convertido
-  tag: string;  
+  preco: string;  
   precoSemDesconto?: string;
+  tag?: string;
 }
 
-interface UseProductsProps {
+export interface UseProductsProps {
   rows?: number;
-  minPrice?: number;  // Preço mínimo opcional
-  maxPrice?: number;  // Preço máximo opcional
+  minPrice?: number;  
+  maxPrice?: number; 
 }
 
-export const useProducts = ({ rows, minPrice, maxPrice }: UseProductsProps) => {
+export const useProducts = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -41,36 +41,10 @@ export const useProducts = ({ rows, minPrice, maxPrice }: UseProductsProps) => {
   if (loading) return { products: [], loading, error };
   if (error) return { products: [], loading, error };
 
-  let filteredProducts = products.map(product => ({
-    ...product,
-    preco: Number(product.preco.replace("R$", "").replace(",", ".")) // Converte string para número
-  }));
 
-  // 🔍 Filtragem por faixa de preço
-  if (minPrice !== undefined || maxPrice !== undefined) {
-    filteredProducts = filteredProducts.filter(product => {
-      const preco = product.preco;
-      return (
-        (minPrice === undefined || preco >= minPrice) &&
-        (maxPrice === undefined || preco <= maxPrice)
-      );
-    });
-  }
+  
 
-  // Se rows for informado, multiplica os produtos para preencher a grade
-  if (rows) {
-    const totalProducts = rows * 4;
-    if (filteredProducts.length === 0) return { products: [], loading, error };
-
-    const repeatedProducts = Array.from({ length: totalProducts }, (_, i) => 
-      filteredProducts[i % filteredProducts.length]
-    );
-
-    console.log("Produtos repetidos:", repeatedProducts);
-    return { products: repeatedProducts, loading, error };
-  }
-
-  return { products: filteredProducts, loading, error };
+  return { products, loading, error };
 };
 
 
