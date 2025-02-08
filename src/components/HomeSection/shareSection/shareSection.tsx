@@ -11,7 +11,7 @@ import share8 from '../../../assets/img-home/shareSection/share8.svg';
 const Share = () => {
   return (
 
-    <div className=' flex flex-col mt-2 mb-2 w-[1440px]'>
+    <div className=' flex flex-col mt-2 mb-2 w-full'>
       <div>
         <h1 className='font-bold text-[40px] text-center text-[#3A3A3A]'>#FuniroFurniture</h1>
         <p className='font-semi-bold text-[20px] text-center text-[#616161]'>Share your setup with</p>
@@ -21,27 +21,27 @@ const Share = () => {
 
         <div className='flex flex-col gap-[16px] '>
           <div className='flex flex-row gap-[16px]'>
-            <img src={share1} alt="" className=' h-[382px]' />
-            <img src={share2} alt="" className='w-[451px] h-[312px] self-end' />
+            <img src={share1} alt="" className=' h-' />
+            <img src={share2} alt="" className='w- self-end' />
           </div>
           <div className='flex flex-row  gap-[16px]'>
-            <img src={share3} alt="" className=' h-[323px]' />
-            <img src={share4} alt="" className='w-[344px] h-[242px]' />
+            <img src={share3} alt="" className=' ' />
+            <img src={share4} alt="" className='' />
           </div>
         </div>
 
         <div className='flex items-center gap-[16px] '>
-          <img src={share5} alt="" className='w-[295px] h-[382px]' />
+          <img src={share5} alt="" className='' />
         </div>
 
         <div className='flex flex-col gap-[16px] '>
           <div className='flex fle-row gap-[16px]  ' >
-            <img src={share6} alt="" className='w-[290px] h-[348px] self-end ' />
-            <img src={share7} alt="" className=' h-[433px]' />
+            <img src={share6} alt="" className=' self-end ' />
+            <img src={share7} alt="" className=' ' />
           </div>
           <div className='flex flex-row gap-[16px] '>
-            <img src={share8} alt="" className='w-[178px] h-[242px]' />
-            <img src={share9} alt="" className='w-[258px] h-[196px]' />
+            <img src={share8} alt="" className='' />
+            <img src={share9} alt="" className='' />
           </div>
         </div>
       </div>

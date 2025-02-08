@@ -2,7 +2,7 @@ import ListProductComponent from "../productCard/listCardComponent";
 
 const ProductsSection = () => {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center w-full">
 
       <h1 className="font-bold font-poppins text-4xl leading-[48px] mt-10 mb-4 text-center
        text-[#3A3A3A]" >

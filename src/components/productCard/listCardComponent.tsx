@@ -1,38 +1,90 @@
-import CardComponent from './cardComponent';
-import { useProducts } from '../../hook/useProduct';
+import CardComponent from "./cardComponent";
+import { useProducts } from "../../hook/useProduct";
+import Pagination from "../../pages/Shop/components/pagination";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import AddToCartButton from "../cart/AddToCartButton";
+
+export interface Product {
+  id: number;
+  imageUrl: string;
+  tag?: string;
+  titulo: string;
+  subtitulo?: string;
+  preco: string ;
+  precoSemDesconto?: string | number;
+}
 
 interface ListProductProps {
   title: string;
   rows: number;
 }
 
- function ListProductComponent({ title, rows }: ListProductProps) {
-  const displayedProducts = useProducts(rows);
+function ListProductComponent({ title, rows }: ListProductProps) {
+  // Agora chamamos o hook corretamente com o objeto
+  const { products: displayedProducts, loading, error } = useProducts({ rows });
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 16;
+  const repeatProducts = 54;
+
+  // Se os produtos ainda não carregaram, retorna estado inicial
+  if (loading) return <p>Carregando produtos...</p>;
+  if (error) return <p>Erro ao carregar produtos.</p>;
+
+  const repeatedProducts =
+    displayedProducts.length > 0
+      ? Array.from({ length: repeatProducts }, (_, i) => displayedProducts[i % displayedProducts.length])
+      : [];
+
+  const paginatedProducts = repeatedProducts
+    .slice((currentPage - 1) * pageSize, currentPage * pageSize)
+    .filter((product) => product && product.id);
+
   return (
-    <div className='flex flex-col items-center justify-center p-4  bg-[#F4F5F7]'>
-      <h2 className='text-2xl font-semibold mb-6 text-[#3A3A3A]'>{title}</h2>
+    <div className="flex flex-col items-center justify-center p-4 bg-[#F4F5F7]">
+      <h2 className="text-2xl font-semibold mb-6 text-[#3A3A3A]">{title}</h2>
       <div className="grid grid-cols-4 justify-center items-center gap-4">
-        {displayedProducts && displayedProducts.length > 0 ? (
-          displayedProducts
-            .filter((product) => product !== undefined)
-            .map((product) => (
-              <CardComponent
-                key={product.id}
-                imageUrl={product.imageUrl}
-                tag={product.tag}
-                titulo={product.titulo}
-                subtitulo={product.subtitulo}
-                preco={product.preco}
-                precoSemDesconto={product.precoSemDesconto}
-              />
-            ))
+        {paginatedProducts.length > 0 ? (
+          paginatedProducts.map((product) => {
+            if (!product || !product.id) {
+              console.error("Produto inválido:", product);
+              return null;
+            }
+
+            return (
+              <Link to={`/produto/${product.id}`} key={product.id} className="relative">
+                <CardComponent
+                  imageUrl={product.imageUrl ?? ""}
+                  tag={product.tag ?? ""}
+                  titulo={product.titulo ?? "Produto sem título"}
+                  subtitulo={product.subtitulo ?? ""}
+                  preco={String(product.preco)}
+                  precoSemDesconto={product.precoSemDesconto ?? "Sem desconto"}
+                />
+
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <AddToCartButton product={{ ...product, preco: String(product.preco) }} />
+                </div>
+              </Link>
+            );
+          })
         ) : (
           <p>Nenhum produto encontrado</p>
         )}
       </div>
+
+      <Pagination
+        totalCount={repeatedProducts.length}
+        pageSize={pageSize}
+        currentPage={currentPage}
+        onPageChange={setCurrentPage}
+      />
     </div>
   );
 }
-export default ListProductComponent
+
+export default ListProductComponent;
+
 
 

@@ -23,7 +23,7 @@
         "imageUrl": "/images/product3.svg",
         "titulo": "Potty",
         "subtitulo": "Minimalist flower pot",
-        "preco": "Rp 500.000",
+        "preco":  500.000,
         "tag": "New",
         "precoSemDesconto": "Rp 14.000.000"
       },
