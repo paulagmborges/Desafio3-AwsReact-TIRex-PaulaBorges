@@ -1,98 +1,96 @@
 import CardComponent from "./cardComponent";
-import product1 from "../../assets/products/product1.svg";
-import product2 from "../../assets/products/product2.svg";
-import product3 from "../../assets/products/product3.svg";
-import product4 from "../../assets/products/product4.svg";
-import product5 from "../../assets/products/product5.svg";
-import product6 from "../../assets/products/product6.svg";
-import product7 from "../../assets/products/product7.svg";
-import product8 from "../../assets/products/product8.svg";
- 
- 
-interface listProductProps {
+import { useProducts } from "../../hook/useProduct";
+import Pagination from "../../pages/Shop/components/pagination";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import AddToCartButton from "../cart/AddToCartButton";
+
+export interface Product {
+  id: number;
+  imageUrl: string;
+  tag?: string;
+  titulo: string;
+  subtitulo?: string;
+  preco: string;
+  precoSemDesconto?: string | number;
+
+}
+
+interface ListProductProps {
   title: string;
   rows: number;
+  paginate?: boolean
 }
- 
-export default function listProductComponent({
-  title,
-  rows,
-}: listProductProps) {
+
+function ListProductComponent({ title, rows, paginate = false }: ListProductProps) {
+
+  const { products: displayedProducts, loading, error } = useProducts();
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 4 * rows
+  const repeatProducts = 54;
+
+
+  if (loading) return <p>Carregando produtos...</p>;
+  if (error) return <p>Erro ao carregar produtos.</p>;
+
+  const repeatedProducts =
+    displayedProducts.length > 0
+      ? Array.from({ length: repeatProducts }, (_, i) => displayedProducts[i % displayedProducts.length])
+      : [];
+
+  const paginatedProducts = repeatedProducts
+    .slice((currentPage - 1) * pageSize, currentPage * pageSize)
+    .filter((product) => product && product.id);
+
   return (
-    <div className="flex flex-col gap-4 justify-center items-center">
-      <h1>{title}</h1>
-      <div className="flex gap-4">
-        <CardComponent
-          imageUrl={product1}
-          titulo="Pingky"
-          subtitulo="Cute bed set"
-          preco="Rp 7.000.000"
-          tag="-50%"
-          precoSemDesconto="14.000.000"
-        />
-        <CardComponent
-          imageUrl={product2}
-          titulo="Syltherine"
-          subtitulo="Stylish cafe chair"
-          preco="Rp 2.500.000"
-          tag="-30%"
-          precoSemDesconto="Rp 3.500.000"
-        />
-        <CardComponent
-          imageUrl={product3}
-          titulo="Potty"
-          subtitulo="Minimalist flower pot"
-          preco="Rp 500.000"
-          tag="New"
-          precoSemDesconto="Rp 14.000.000"
-        />
-        <CardComponent
-          imageUrl={product4}
-          titulo="Respira"
-          subtitulo="Outdoor bar table and stool"
-          preco="Rp 500.000"
-          tag="New"
-          precoSemDesconto="Rp 14.000.000"
-        />
+    <div className="flex flex-col items-center justify-center p-4 bg-[#F4F5F7]">
+      <h2 className="text-2xl font-semibold mb-6 text-[#3A3A3A]">{title}</h2>
+      <div className="grid grid-cols-4 justify-center items-center gap-4">
+        {paginatedProducts.length > 0 ? (
+          paginatedProducts.map((product) => {
+            if (!product || !product.id) {
+              console.error("Produto inválido:", product);
+              return null;
+            }
+
+            return (
+              <Link to={`/produto/${product.id}`} key={product.id} className="relative">
+                <CardComponent
+                  imageUrl={product.imageUrl ?? ""}
+                  tag={product.tag ?? ""}
+                  titulo={product.titulo ?? "Produto sem título"}
+                  subtitulo={product.subtitulo ?? ""}
+                  preco={String(product.preco)}
+                  precoSemDesconto={product.precoSemDesconto ?? "Sem desconto"}
+                />
+
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <AddToCartButton product={{ ...product, preco: String(product.preco) }} />
+                </div>
+              </Link>
+            );
+          })
+        ) : (
+          <p>Nenhum produto encontrado</p>
+        )}
       </div>
-      {rows > 1 && (
-        <div className="flex gap-4">
-          <CardComponent
-            imageUrl={product5}
-            titulo="Syltherine"
-            subtitulo="Stylish cafe chair"
-            preco="Rp 2.500.000"
-            tag="-30%"
-            precoSemDesconto="Rp 3.500.000"
+      {
+        paginate && (
+          <Pagination
+            totalCount={repeatedProducts.length}
+            pageSize={pageSize}
+            currentPage={currentPage}
+            onPageChange={setCurrentPage}
           />
-          <CardComponent
-            imageUrl={product6}
-            titulo="Lolito"
-            subtitulo="Luxury big sofa"
-            preco="Rp 7.000.000"
-            tag="-50%"
-            precoSemDesconto="Rp 14.000.000"
-          />
-          <CardComponent
-            imageUrl={product7}
-            titulo="Respira"
-            subtitulo="Outdoor bar table and stool"
-            preco="Rp 500.000"
-            tag="New"
-            precoSemDesconto=""
-          />
-          <CardComponent
-            imageUrl={product8}
-            titulo="Leviosa"
-            subtitulo="Stylish cafe chair"
-            preco="12.500.00"
-            tag=""
-            precoSemDesconto="2000,00"
-          />
-        </div>
-      )}
-      
+        )
+      }
+
     </div>
   );
 }
- 
+
+export default ListProductComponent;
+
+
+

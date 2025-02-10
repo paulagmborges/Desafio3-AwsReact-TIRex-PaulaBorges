@@ -1,14 +1,21 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import { PageRoute } from './pages/page-route';          
-import './index.css';
+// src/index.tsx
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import { ProductProvider } from "./context/ProductContext";
+import { CartProvider } from "./context/CartContext"; // Importando CartProvider
+import { PageRoute } from "./pages/page-route";
 
-createRoot(document.getElementById('root')!).render(
+import "./index.css";
+
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-      <PageRoute />
-     
+      <ProductProvider>
+        <CartProvider> 
+          <PageRoute />
+        </CartProvider>
+      </ProductProvider>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 );

@@ -11,8 +11,10 @@
     "start": "npx json-server --watch db.json --port 3001"
   },
   "dependencies": {
+    "@mui/material": "^6.4.3",
     "@splidejs/react-splide": "^0.7.12",
     "axios": "^1.7.9",
+    "classnames": "^2.5.1",
     "lucide-react": "^0.474.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
