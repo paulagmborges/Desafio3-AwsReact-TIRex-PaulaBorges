@@ -65,7 +65,7 @@ function ListProductComponent({ title, rows, paginate = false }: ListProductProp
                   precoSemDesconto={product.precoSemDesconto ?? "Sem desconto"}
                 />
 
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex items-center justify-center">
                   <AddToCartButton product={{ ...product, preco: String(product.preco) }} />
                 </div>
               </Link>
