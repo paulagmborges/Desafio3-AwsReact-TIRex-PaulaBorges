@@ -3,6 +3,8 @@ import Home from './Home';
 import Shop from './Shop';
 import ProductDetail from './ProductDetails';
 import  Contact  from './Contact/index'
+import Cart from './Cart/index'
+import Checkout from './Checkout/';
 export const PageRoute = () => {
     return (
         <Routes>
@@ -10,6 +12,8 @@ export const PageRoute = () => {
             <Route path="/shop" element={<Shop />} />
             <Route path="/produto/:id" element={<ProductDetail />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/cart" element={<Cart />} />
            
         </Routes>
     );

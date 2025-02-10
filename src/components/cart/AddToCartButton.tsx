@@ -21,9 +21,9 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
   };
 
   return (
-    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-10 opacity-0 hover:opacity-100 transition-opacity duration-300">
       <button
-        className="px-4 py-2 text-[#B88E2F] bg-white rounded-md"
+        className="px-4 py-2 text-[#B88E2F] bg-white rounded-md text-[16px]"
         onClick={handleAddToCart} 
       >
         Add to Cart

@@ -3,7 +3,7 @@ import "@splidejs/splide/dist/css/splide.min.css";
 
 import sectionIspiration1 from "../../../assets/img-home/sectionIspiration1.svg";
 import sectionIspiration2 from "../../../assets/img-home/sectionInspiration2.svg";
-import sectionIspiration3 from "../../../assets/img-home/sectionInspiration3.svg";
+import sectionImage4 from "../../../assets/img-home/sectionImage4.png";
 import VectorCarousel from '../../../assets/img-home/VectorCarousel.svg'
 import './style.css';
 
@@ -46,7 +46,6 @@ const Carousel = () => {
             </div>
           </div>
         </SplideSlide>
-
         <SplideSlide>
           <div className="image-container">
             <img
@@ -68,10 +67,11 @@ const Carousel = () => {
         <SplideSlide>
           <div className="image-container">
             <img
-              src={sectionIspiration3}
+              src={sectionImage4}
               alt="Inspiração 3"
               className="carousel-image"
             />
+            
             <div className="carousel-message">
 
               <p className="bedRoom">01 - Bed Room</p>
