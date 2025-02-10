@@ -1,29 +1,47 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
 import axios from 'axios';
+
+import ColorSelection from './components/SelectionColor'
+import SelectionSize from './components/SelectionSize'
+import QuantitySelector from './components/SelectionQuantity'
+
+
+import image1 from '../../assets/img-product-detail/image1.svg'
+import image2 from '../../assets/img-product-detail/image2.svg'
+import image3 from '../../assets/img-product-detail/image3.svg'
+import image4 from '../../assets/img-product-detail/image4.svg'
+
+import Stars from './components/Stars'
+import Header from '../../components/header/header';
+import Footer from '../../components/footer/footer';
+import Description from './components/Description';
+import RealatedProduct from './components/RelatedProducts';
+
 
 export interface ProductDatail {
   id: number;
   imageUrl: string;
   titulo: string;
   subtitulo: string;
-  preco: string;  
+  preco: string;
   precoSemDesconto?: string;
   tag?: string;
-  description:string;
+  description: string;
   sku: string,
-  category:string
+  category: string
 }
 
 function ProductDetail() {
-  const { id } = useParams(); 
+  const { id } = useParams();
   const [products, setProducts] = useState<ProductDatail>();
+  const [rating, setRating] = useState(4.5);
+
 
   useEffect(() => {
-   
+
     axios
-      .get("http://localhost:3001/products/"+id)
+      .get("http://localhost:3001/products/" + id)
       .then((response) => {
         console.log("Produtos carregados:", response.data);
         setProducts(response.data);
@@ -36,13 +54,68 @@ function ProductDetail() {
   }, [id]);
 
   return (
-    <div>
-      <h1>
-        Detalhes do Produto {id}</h1>
-        <div>{products?.id}</div>
-        <img src={products?.imageUrl} alt="" />
-        <div>{products?.titulo}</div>
-     
+
+    <div className='flex flex-col'>
+      <div><Header /></div>
+      <div className="flex flex-row w-full h-[820px] gap-[84px] justify-center items-center">
+
+        <div className='flex flex-col gap-[32px] w-[72px] h-[416px]'>
+          <img src={image1} alt="imagem 1" className='w-[76px] h-[80px]' />
+          <img src={image2} alt="imagem 2" className='w-[76px] h-[80px]' />
+          <img src={image3} alt="imagem 3" className='w-[76px] h-[80px]' />
+          <img src={image4} alt="imagem 4" className='w-[76px] h-[80px]' />
+        </div>
+
+
+        <div className='flex flex-col  '>
+          <img
+            src={products?.imageUrl}
+            alt={products?.titulo || "Imagem do produto"}
+            className="w-[481px] h-[500px]"
+          />
+        </div>
+
+
+        <div className="flex flex-col  w-[606px] h-[730px] font-poppins">
+          <h1 className="text-[42px] font-normal">{products?.titulo}</h1>
+          <p className="text-[#9F9F9F] font-medium text-[24px] leading-[36px]">
+            {products?.preco}
+          </p>
+
+          <div> <Stars stars={rating} />
+            <button onClick={() => setRating(rating + 0.5)}>Aumentar Classificação</button> | Custom Item</div>
+
+          <p className="text-[13px] font-normal w-[424px] h-[80px]">
+            Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+            stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended
+            highs for a sound.
+          </p>
+
+          <div className="w-[123px] h-[63px] flex flex-col gap-3">
+            <p className="text-[#9F9F9F] text-[14px] font-normal font-poppins">
+              Size
+            </p>
+            <SelectionSize />
+            <div>
+              <p className="text-[#9F9F9F] text-[14px] font-normal font-poppins">
+                Color
+              </p>
+              <ColorSelection />
+            </div>
+            <div className='flex gap-[18px] justify-between'>
+              <QuantitySelector />
+            </div>
+            
+      
+          </div>
+        </div>
+      </div>
+
+
+      <div><Description /></div>
+      <div> <RealatedProduct /></div>
+      <div><Footer /></div>
+
     </div>
   );
 }
