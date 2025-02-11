@@ -1,6 +1,6 @@
 import  { useState } from "react";
 
-const sizes = ["L", "XL", "XXL"] as const;
+const sizes = ["L", "XL", "XS"] as const;
 type SizeType = (typeof sizes)[number];
 
 const SelectionSize = () => {

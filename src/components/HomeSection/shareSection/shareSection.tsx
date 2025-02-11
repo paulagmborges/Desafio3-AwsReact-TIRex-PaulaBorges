@@ -21,7 +21,7 @@ const Share = () => {
 
         <div className='flex flex-col gap-[16px] '>
           <div className='flex flex-row gap-[16px]'>
-            <img src={share1} alt="" className=' h-' />
+            <img src={share1} alt="" className='' />
             <img src={share2} alt="" className='w- self-end' />
           </div>
           <div className='flex flex-row  gap-[16px]'>

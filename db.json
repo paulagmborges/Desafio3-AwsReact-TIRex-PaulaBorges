@@ -10,8 +10,27 @@
         "precoSemDesconto":  "Rp 14.0000",
         "description": "sofa",
         "sku":"ksanj",
-        "category":"sala"
-       
+        "SKU": "SS001",
+        "category": [
+            "table",
+            "chair"
+        ],
+        "tags": [
+            "table",
+            "chair",
+            "dinning",
+            "indoor"
+        ],
+        "size": [
+            "L",
+            "XL",
+            "XS"
+        ],
+        "color": [
+            "purple",
+            "black",
+            "brown"
+        ]      
       },
       {
         "id": 2,
