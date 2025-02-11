@@ -1,58 +1,38 @@
-import React, { createContext, useState, useContext, ReactNode } from 'react';
+import { createContext,  useState, ReactNode } from "react";
 
-
+// Definição do tipo do produto
 export interface Product {
   id: number;
   imageUrl: string;
   titulo: string;
-  subtitulo?: string;
-  preco: string;
-  precoSemDesconto?: string;
+  subtitulo: string;
+  preco: string| number;
   tag?: string;
+  precoSemDesconto: string | number;
 }
 
+// Definição do tipo do contexto do carrinho
 interface CartContextType {
   cart: Product[];
-  addToCart: (product: Product) => void;
-  removeFromCart: (productId: number) => void;
+  addToCart: (item: Product) => void;
+  removeFromCart: (id: number) => void;
 }
 
-
+// Criando o contexto do carrinho
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-// Hook para acessar o contexto de carrinho
-export const useCart = () => {
-  const context = useContext(CartContext);
-  if (!context) {
-    throw new Error('useCart must be used within a CartProvider');
-  }
-  return context;
-};
+// Provedor do contexto do carrinho
+export const CartProvider = ({ children }: { children: ReactNode }) => {
+  const [cart, setCart] = useState<Product[]>([]);
 
-
-interface CartProviderProps {
-  children: ReactNode;
-}
-
-
-export const CartProvider = ({ children }: CartProviderProps) => {
-  const [cart, setCart] = useState<Product[]>([]); 
-
-
-  const addToCart = (product: Product) => {
-    setCart((prevCart) => {
-      
-      const productInCart = prevCart.find(item => item.id === product.id);
-      if (!productInCart) {
-        return [...prevCart, product];
-      }
-      return prevCart; 
-    });
+  // Adicionar item ao carrinho
+  const addToCart = (item: Product) => {
+    setCart((prevCart) => [...prevCart, item]);
   };
 
-  
-  const removeFromCart = (productId: number) => {
-    setCart((prevCart) => prevCart.filter(product => product.id !== productId));
+  // Remover item do carrinho
+  const removeFromCart = (id: number) => {
+    setCart((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
   return (
@@ -61,6 +41,10 @@ export const CartProvider = ({ children }: CartProviderProps) => {
     </CartContext.Provider>
   );
 };
+
+export default CartContext
+
+
 
 
 
