@@ -11,6 +11,7 @@
     "start": "npx json-server --watch db.json --port 3001"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.22.12",
     "@mui/material": "^6.4.3",
     "@splidejs/react-splide": "^0.7.12",
     "axios": "^1.7.9",

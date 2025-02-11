@@ -17,19 +17,23 @@ import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import Description from './components/Description';
 import RealatedProduct from './components/RelatedProducts';
-
+import BarPath from './components/BarPath';
+import LinkSocial from './components/linkSocial'
 
 export interface ProductDatail {
   id: number;
   imageUrl: string;
   titulo: string;
   subtitulo: string;
-  preco: string;
-  precoSemDesconto?: string;
+  preco: string | number;
+  precoSemDesconto?: string | number;
   tag?: string;
   description: string;
   sku: string,
-  category: string
+  category: string,
+  colors?: string,
+ 
+
 }
 
 function ProductDetail() {
@@ -57,63 +61,67 @@ function ProductDetail() {
 
     <div className='flex flex-col'>
       <div><Header /></div>
-      <div className="flex flex-row w-full h-[820px] gap-[84px] justify-center items-center">
+      <div><BarPath /></div>
+      <div className='h-[820px]'>
+        <div className="flex flex-row w-full h-[730px] gap-[84px] justify-center items-center">
 
-        <div className='flex flex-col gap-[32px] w-[72px] h-[416px]'>
-          <img src={image1} alt="imagem 1" className='w-[76px] h-[80px]' />
-          <img src={image2} alt="imagem 2" className='w-[76px] h-[80px]' />
-          <img src={image3} alt="imagem 3" className='w-[76px] h-[80px]' />
-          <img src={image4} alt="imagem 4" className='w-[76px] h-[80px]' />
-        </div>
-
-
-        <div className='flex flex-col  '>
-          <img
-            src={products?.imageUrl}
-            alt={products?.titulo || "Imagem do produto"}
-            className="w-[481px] h-[500px]"
-          />
-        </div>
-
-
-        <div className="flex flex-col  w-[606px] h-[730px] font-poppins">
-          <h1 className="text-[42px] font-normal">{products?.titulo}</h1>
-          <p className="text-[#9F9F9F] font-medium text-[24px] leading-[36px]">
-            {products?.preco}
-          </p>
-
-          <div> <Stars stars={rating} />
-            <button onClick={() => setRating(rating + 0.5)}>Aumentar Classificação</button> | Custom Item</div>
-
-          <p className="text-[13px] font-normal w-[424px] h-[80px]">
-            Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
-            stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended
-            highs for a sound.
-          </p>
-
-          <div className="w-[123px] h-[63px] flex flex-col gap-3">
-            <p className="text-[#9F9F9F] text-[14px] font-normal font-poppins">
-              Size
-            </p>
-            <SelectionSize />
-            <div>
-              <p className="text-[#9F9F9F] text-[14px] font-normal font-poppins">
-                Color
-              </p>
-              <ColorSelection />
-            </div>
-            <div className='flex gap-[18px] justify-between'>
-              <QuantitySelector />
-            </div>
-            
-      
+          <div className='flex flex-col gap-[32px] w-[72px] h-[416px] mb-[80px]  '>
+            <img src={image1} alt="imagem 1" className='w-[76px] h-[80px]' />
+            <img src={image2} alt="imagem 2" className='w-[76px] h-[80px]' />
+            <img src={image3} alt="imagem 3" className='w-[76px] h-[80px]' />
+            <img src={image4} alt="imagem 4" className='w-[76px] h-[80px]' />
           </div>
+
+          <div className='flex flex-col  '>
+            <img
+              src={products?.imageUrl}
+              alt={products?.titulo || "Imagem do produto"}
+              className="w-[481px] h-[500px]"
+            />
+          </div>
+
+          <div className="flex flex-col  w-[606px] h-[730px] font-poppins mt-[200px]">
+            <h1 className="text-[42px] font-normal">{products?.titulo}</h1>
+            <p className="text-[#9F9F9F] font-medium text-[24px] leading-[36px]">
+              {products?.preco}
+            </p>
+
+            <div> <Stars stars={rating} />
+              <button onClick={() => setRating(rating + 0.5)}>Aumentar Classificação</button> | Custom Item</div>
+
+            <p className="text-[13px] font-normal w-[424px] h-[80px]">
+              Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+              stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended
+              highs for a sound.
+            </p>
+
+            <div className="w-[123px] h-[63px] flex flex-col gap-3">
+              <p className="text-[#9F9F9F] text-[14px] font-normal font-poppins">
+                Size
+              </p>
+              <SelectionSize />
+              <div>
+                <p className="text-[#9F9F9F] text-[14px] font-normal font-poppins">
+                  Color
+                </p>
+                <ColorSelection />
+              </div>
+              <div className='flex gap-[18px] justify-between'>
+                <QuantitySelector />
+              </div>
+              <div><LinkSocial /></div>
+
+            </div>
+
+          </div>
+
         </div>
+
       </div>
 
 
       <div><Description /></div>
-      <div> <RealatedProduct /></div>
+      <div> <RealatedProduct  /></div>
       <div><Footer /></div>
 
     </div>
