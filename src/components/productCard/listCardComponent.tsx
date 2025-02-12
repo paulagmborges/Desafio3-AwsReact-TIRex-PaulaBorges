@@ -66,8 +66,15 @@ function ListProductComponent({ title, rows, paginate = false }: ListProductProp
                 />
 
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <AddToCartButton product={{ ...product, preco: String(product.preco) }} />
+                  <AddToCartButton
+                    product={{
+                      ...product,
+                      preco: String(product.preco), 
+                      precoSemDesconto: product.precoSemDesconto ?? 0, 
+                    }}
+                  />
                 </div>
+
               </Link>
             );
           })

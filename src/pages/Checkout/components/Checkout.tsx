@@ -1,4 +1,5 @@
     import BillingDetails from "./BillingDetails";
+import SubmitButton from "./ButtonSubmit";
     const CheckoutComponent = () => {
 
         return (
@@ -70,14 +71,7 @@
                                     <p className="text-[16px] font-light">Your personal data will be used to support your experience throughout this website,
                                         to manage access to your account, and for other purposes described in our <span className="font-semibold">privacy policy</span> .</p>
 
-                                    <button
-                                        type="submit"
-                                        className="w-[318px] h-[64px] border-[1px] border-black
-                bg-white rounded text-center items-center self-center"
-                                    >
-                                        Place order
-                                    </button>
-
+                                        <SubmitButton />
 
                                 </div>
 

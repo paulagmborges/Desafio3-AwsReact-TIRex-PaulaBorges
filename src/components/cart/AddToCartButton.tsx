@@ -8,7 +8,7 @@ export interface AddToCartButtonProps {
     preco: string | number;
     imageUrl: string;
     subtitulo: string;
-    precoSemDesconto: string | number;
+    precoSemDesconto: string | number ;
   };
 }
 

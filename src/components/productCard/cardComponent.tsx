@@ -4,8 +4,8 @@ interface CardProps {
     tag: string
     titulo: string
     subtitulo: string
-    preco: string
-    precoSemDesconto?: string
+    preco: string |number
+    precoSemDesconto?: string|number
 }
 
 
