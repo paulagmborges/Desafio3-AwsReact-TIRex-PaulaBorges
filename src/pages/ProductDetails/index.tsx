@@ -20,7 +20,11 @@ import RealatedProduct from './components/RelatedProducts';
 import BarPath from './components/BarPath';
 import LinkSocial from './components/linkSocial'
 
-export interface ProductDatail {
+import ProductDetailsBtn from './components/btaddToCart';
+
+
+
+export interface ProductDetail {
   id: number;
   imageUrl: string;
   titulo: string;
@@ -32,13 +36,16 @@ export interface ProductDatail {
   sku: string,
   category: string,
   colors?: string,
- 
+  quantidade: number,
+
 
 }
 
+
+
 function ProductDetail() {
   const { id } = useParams();
-  const [products, setProducts] = useState<ProductDatail>();
+  const [products, setProducts] = useState<ProductDetail>();
   const [rating, setRating] = useState(4.5);
 
 
@@ -106,22 +113,31 @@ function ProductDetail() {
                 </p>
                 <ColorSelection />
               </div>
-              <div className='flex gap-[18px] justify-between'>
-                <QuantitySelector />
+              <div className='flex'>
+                <div className='flex gap-[58px] justify-between'>
+                  <QuantitySelector />
+                </div>
+                <button
+                  onClick={() => addToCart(product)}
+                  className=" border border-black rounded text-black font-semibold"
+                >
+                  Add To CArt
+                </button>
+
               </div>
+
+
+
+
               <div><LinkSocial /></div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
 
 
       <div><Description /></div>
-      <div> <RealatedProduct  /></div>
+      <div> <RealatedProduct /></div>
       <div><Footer /></div>
 
     </div>

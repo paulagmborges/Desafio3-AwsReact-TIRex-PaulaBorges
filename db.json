@@ -7,7 +7,8 @@
       "subtitulo": "Cute bed set",
       "preco": 7000,
       "tag": "-50%",
-      "precoSemDesconto": 14000
+      "precoSemDesconto": 14000,
+      "quantidade": 2
 },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "subtitulo": "Stylish cafe chair",
       "preco": 25000,
       "tag": "-30%",
-      "precoSemDesconto": 35000
+      "precoSemDesconto": 35000,
+      "quantidade": 2
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "subtitulo": "Minimalist flower pot",
       "preco": 5000,
       "tag": "New",
-      "precoSemDesconto": 0
+      "precoSemDesconto": 0,
+      "quantidade": 2
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "subtitulo": "Outdoor bar table and stool",
       "preco": 5000,
       "tag": "New",
-      "precoSemDesconto": 0
+      "precoSemDesconto": 0,
+      "quantidade": 2
     },
     {
       "id": 6,
@@ -43,7 +47,8 @@
       "subtitulo": "Luxury big sofa",
       "preco": 7000,
       "tag": "-50%",
-      "precoSemDesconto": 14000
+      "precoSemDesconto": 14000,
+      "quantidade": 2
     },
     {
       "id": 7,
@@ -52,7 +57,8 @@
       "subtitulo": "Outdoor bar table and stool",
       "preco": 5000,
       "tag": "New",
-      "precoSemDesconto": 0
+      "precoSemDesconto": 0,
+      "quantidade": 2
     },
     {
       "id": 8,
@@ -61,7 +67,8 @@
       "subtitulo": "Stylish cafe chair",
       "preco": 2000,
       "tag": "",
-      "precoSemDesconto": 12500
+      "precoSemDesconto": 12500,
+      "quantidade": 2
     }
   ]
 }

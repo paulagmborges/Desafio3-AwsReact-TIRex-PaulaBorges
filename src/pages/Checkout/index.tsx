@@ -10,7 +10,7 @@ const Checkout = () => {
     return (
       <div className=" flex flex-col">
          <Header />
-         <Banner title="Contact" subtitle="Home > Contact" />
+         <Banner title="Checkout" subtitle="Home > Checkout" />
          <CheckoutComponent />
          <Section4 />
          <Footer />

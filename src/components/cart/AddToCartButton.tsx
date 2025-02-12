@@ -1,15 +1,14 @@
-
 import React from 'react';
 import { useCart} from '../../hook/useCart'; 
 
-interface AddToCartButtonProps {
+export interface AddToCartButtonProps {
   product: {
     id: number;
     titulo: string;
-    preco: string;
+    preco: string | number;
     imageUrl: string;
     subtitulo: string;
-    precoSemDesconto: string;
+    precoSemDesconto: string | number;
   };
 }
 
@@ -36,3 +35,4 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
 };
 
 export default AddToCartButton;
+
