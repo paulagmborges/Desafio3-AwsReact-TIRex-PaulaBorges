@@ -6,17 +6,39 @@
       "titulo": "Pingky",
       "subtitulo": "Cute bed set",
       "preco": 7000,
-      "tag": "-50%",
-      "precoSemDesconto": 14000
-},
+      "sku": "PING123",
+      "category": "Bed Sets",
+      "tags": ["Cute", "Bedding", "Sale"],
+      "precoSemDesconto": 14000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Pingky",
+      "sizes": ["L", "XL", "XS"],
+      "colors": [
+        { "name": "Purple", "hex": "#816DFA" },
+        { "name": "Black", "hex": "#000000" },
+        { "name": "Brown", "hex": "#B88E2F" }
+      ]
+    },
     {
       "id": 2,
       "imageUrl": "/images/product2.svg",
       "titulo": "Syltherine",
       "subtitulo": "Stylish cafe chair",
       "preco": 25000,
-      "tag": "-30%",
-      "precoSemDesconto": 35000
+      "sku": "SYL123",
+      "category": "Chairs",
+      "tags": ["Stylish", "Cafe", "Furniture"],
+      "precoSemDesconto": 35000,
+      "quantidade": 2,
+      "rating": 5,
+      "description": "Descrição do Syltherine",
+      "sizes": ["M", "L", "XL"],
+      "colors": [
+        { "name": "Red", "hex": "#FF0000" },
+        { "name": "Gray", "hex": "#808080" },
+        { "name": "Black", "hex": "#000000" }
+      ]
     },
     {
       "id": 3,
@@ -24,8 +46,18 @@
       "titulo": "Potty",
       "subtitulo": "Minimalist flower pot",
       "preco": 5000,
-      "tag": "New",
-      "precoSemDesconto": 0
+      "sku": "POT123",
+      "category": "Decor",
+      "tags": ["Minimalist", "Flower", "Pot"],
+      "precoSemDesconto": 0,
+      "quantidade": 2,
+      "rating": 3,
+      "description": "Descrição do Potty",
+      "sizes": ["S", "M"],
+      "colors": [
+        { "name": "White", "hex": "#FFFFFF" },
+        { "name": "Beige", "hex": "#F5F5DC" }
+      ]
     },
     {
       "id": 4,
@@ -33,8 +65,18 @@
       "titulo": "Respira",
       "subtitulo": "Outdoor bar table and stool",
       "preco": 5000,
-      "tag": "New",
-      "precoSemDesconto": 0
+      "sku": "RESP123",
+      "category": "Outdoor",
+      "tags": ["Outdoor", "Bar", "Table"],
+      "precoSemDesconto": 0,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Respira",
+      "sizes": ["M", "L", "XL"],
+      "colors": [
+        { "name": "Green", "hex": "#008000" },
+        { "name": "Brown", "hex": "#A52A2A" }
+      ]
     },
     {
       "id": 6,
@@ -42,8 +84,19 @@
       "titulo": "Lolito",
       "subtitulo": "Luxury big sofa",
       "preco": 7000,
-      "tag": "-50%",
-      "precoSemDesconto": 14000
+      "sku": "LOL123",
+      "category": "Sofas",
+      "tags": ["Luxury", "Sofa", "Sale"],
+      "precoSemDesconto": 14000,
+      "quantidade": 2,
+      "rating": 5,
+      "description": "Descrição do Lolito",
+      "sizes": ["S", "M", "L"],
+      "colors": [
+        { "name": "Navy", "hex": "#000080" },
+        { "name": "Gray", "hex": "#D3D3D3" },
+        { "name": "Black", "hex": "#000000" }
+      ]
     },
     {
       "id": 7,
@@ -51,8 +104,18 @@
       "titulo": "Respira",
       "subtitulo": "Outdoor bar table and stool",
       "preco": 5000,
-      "tag": "New",
-      "precoSemDesconto": 0
+      "sku": "RESP456",
+      "category": "Outdoor",
+      "tags": ["Outdoor", "Bar", "Table"],
+      "precoSemDesconto": 0,
+      "quantidade": 2,
+      "rating": 3,
+      "description": "Descrição do Respira",
+      "sizes": ["M", "L", "XL"],
+      "colors": [
+        { "name": "Green", "hex": "#008000" },
+        { "name": "Brown", "hex": "#A52A2A" }
+      ]
     },
     {
       "id": 8,
@@ -60,8 +123,18 @@
       "titulo": "Leviosa",
       "subtitulo": "Stylish cafe chair",
       "preco": 2000,
-      "tag": "",
-      "precoSemDesconto": 12500
+      "sku": "LEV123",
+      "category": "Chairs",
+      "tags": ["Stylish", "Cafe", "Furniture"],
+      "precoSemDesconto": 12500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Leviosa",
+      "sizes": ["XS", "S", "M"],
+      "colors": [
+        { "name": "Pink", "hex": "#FFC0CB" },
+        { "name": "White", "hex": "#FFFFFF" }
+      ]
     }
   ]
 }

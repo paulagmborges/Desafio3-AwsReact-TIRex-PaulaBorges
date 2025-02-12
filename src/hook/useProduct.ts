@@ -6,9 +6,10 @@ export interface Product {
   imageUrl: string;
   titulo: string;
   subtitulo: string;
-  preco: string;  
-  precoSemDesconto?: string;
+  preco: string | number;  
+  precoSemDesconto?: string | number;
   tag?: string;
+  quantidade: number
 }
 
 export interface UseProductsProps {

@@ -26,7 +26,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<Product[]>([]);
 
   // Adicionar item ao carrinho
-  const addToCart = (item: Product) => {
+const addToCart = (item: Product) => {
     setCart((prevCart) => [...prevCart, item]);
   };
 

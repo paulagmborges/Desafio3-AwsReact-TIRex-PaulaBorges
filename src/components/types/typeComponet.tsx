@@ -3,8 +3,9 @@ export interface Product {
     imageUrl: string;
     titulo: string;
     subtitulo: string;
-    preco: string;
+    preco: string | number;
     tag?: string;
-    precoSemDesconto: string;
+    precoSemDesconto: string | number;
+    quantidade:number
   }
   

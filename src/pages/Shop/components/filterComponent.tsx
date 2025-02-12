@@ -1,11 +1,11 @@
-import  { useState } from 'react';  // Certifique-se de importar o useState
+import  { useState } from 'react';  
 import FilterPopup from '../../Shop/components/FilterPopup'; 
 import vectorfilter from '../../../assets/img-shop/vector-filter.png';
 import vector from '../../../assets/img-shop/Vector1.png';
 import vector2 from '../../../assets/img-shop/vector2.png';
 
 const Filter = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false); // Usando useState corretamente
+  const [isPopupOpen, setIsPopupOpen] = useState(false); 
 
   const openPopup = () => {
     setIsPopupOpen(true); 

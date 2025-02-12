@@ -5,7 +5,8 @@ import ProductDetail from './ProductDetails';
 import Contact from './Contact/index'
 import CartComponent from './Cart/index'
 import Checkout from './Checkout/';
-import { SignUp, SignIn } from '@clerk/clerk-react';
+import { SignUp,  } from '@clerk/clerk-react';
+import LoginComponent from './Login/component/loginTela';
 
 
 
@@ -18,7 +19,7 @@ export const PageRoute = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/checkout" element={<Checkout />} />
           
-            <Route path="/login" element={<SignIn />} />
+            <Route path="/login" element={<LoginComponent />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/cart" element={<CartComponent />} />
 
