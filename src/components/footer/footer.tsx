@@ -14,13 +14,13 @@ const Footer = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(email)) {
-      setError("Por favor, insira um email válido.");
+      setError("Please enter a valid email!");
       setSuccessMessage(null);
       return;
     }
 
     setError(null);
-    setSuccessMessage("Inscrição realizada com sucesso!");
+    setSuccessMessage("Registration completed successfully!");
   };
 
   return (

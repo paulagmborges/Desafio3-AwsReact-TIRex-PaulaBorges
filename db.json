@@ -18,7 +18,8 @@
         { "name": "Purple", "hex": "#816DFA" },
         { "name": "Black", "hex": "#000000" },
         { "name": "Brown", "hex": "#B88E2F" }
-      ]
+      ],
+      "tag": "50%"
     },
     {
       "id": 2,
@@ -38,7 +39,8 @@
         { "name": "Red", "hex": "#FF0000" },
         { "name": "Gray", "hex": "#808080" },
         { "name": "Black", "hex": "#000000" }
-      ]
+      ],
+      "tag": "50%"
     },
     {
       "id": 3,
@@ -57,7 +59,8 @@
       "colors": [
         { "name": "White", "hex": "#FFFFFF" },
         { "name": "Beige", "hex": "#F5F5DC" }
-      ]
+      ],
+      "tag": "New"
     },
     {
       "id": 4,
@@ -76,7 +79,8 @@
       "colors": [
         { "name": "Green", "hex": "#008000" },
         { "name": "Brown", "hex": "#A52A2A" }
-      ]
+      ],
+      "tag": "New"
     },
     {
       "id": 6,
@@ -96,7 +100,8 @@
         { "name": "Navy", "hex": "#000080" },
         { "name": "Gray", "hex": "#D3D3D3" },
         { "name": "Black", "hex": "#000000" }
-      ]
+      ],
+      "tag": "50%"
     },
     {
       "id": 7,
@@ -115,7 +120,8 @@
       "colors": [
         { "name": "Green", "hex": "#008000" },
         { "name": "Brown", "hex": "#A52A2A" }
-      ]
+      ],
+      "tag": "New"
     },
     {
       "id": 8,
@@ -134,7 +140,8 @@
       "colors": [
         { "name": "Pink", "hex": "#FFC0CB" },
         { "name": "White", "hex": "#FFFFFF" }
-      ]
+      ],
+      "tag": "70%"
     }
   ]
 }
