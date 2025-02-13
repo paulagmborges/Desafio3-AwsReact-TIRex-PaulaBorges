@@ -28,7 +28,7 @@ function ListProductComponent({ title, rows, paginate = false }: ListProductProp
 
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 4 * rows
-  const repeatProducts = 24;
+  const repeatProducts = 34;
 
 
   if (loading) return <p>Carregando produtos...</p>;

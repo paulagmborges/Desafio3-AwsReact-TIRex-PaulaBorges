@@ -18,6 +18,8 @@ import Description from './components/Description';
 import RelatedProduct from './components/RelatedProducts';
 import BarPath from './components/BarPath';
 import LinkSocial from './components/linkSocial';
+import Spinner from '../../components/spinner/Spinner';
+
 
 export interface ProductDetail {
   id: number;
@@ -41,6 +43,7 @@ function ProductDetail() {
   const [product, setProduct] = useState<ProductDetail | null>(null);
   const [rating, setRating] = useState(4.5);
   const [selectedSize, setSelectedSize] = useState<string | null>(null); 
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const navigate = useNavigate(); 
 
@@ -55,14 +58,20 @@ function ProductDetail() {
         console.log("Produto carregado:", response.data);
         setProduct(response.data);
         setRating(response.data.rating ?? 4.5);
+        setIsLoading(false)
       })
       .catch((err) => {
         console.error("Erro ao carregar produto:", err);
       });
   }, [id]);
 
+  if (isLoading) {
+    return <Spinner />;  
+  }
+
   if (!product) {
-    return <p>Carregando...</p>;
+    return <p>Produto não encontrado</p>;
+
   }
 
   const handleAddToCart = () => {

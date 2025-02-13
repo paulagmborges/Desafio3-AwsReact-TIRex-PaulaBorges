@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSignIn } from "@clerk/clerk-react";
 
-// Tipagem das funções de validação
+
 const validateEmail = (email: string): boolean => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
@@ -41,7 +41,7 @@ const LoginComponent: React.FC = () => {
       return;
     }
     console.log("Login bem-sucedido! Redirecionando...");
-    navigate("/shop");
+    navigate("/cart");
   };
 
   const handleGoogleSignIn = async (): Promise<void> => {
@@ -50,7 +50,7 @@ const LoginComponent: React.FC = () => {
       await signIn.authenticateWithRedirect({
         strategy: "oauth_google",
         redirectUrl: "/shop",
-        redirectUrlComplete: "/shop", // Adicionado para corrigir erro
+        redirectUrlComplete: "/shop", 
       });
     } catch (error) {
       console.error("Erro ao autenticar com Google:", error);

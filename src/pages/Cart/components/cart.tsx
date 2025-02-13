@@ -58,7 +58,7 @@ const CartComponent = () => {
                 )}
             </div>
 
-            {/* Resumo do Carrinho */}
+           
             <div className="w-1/3 h-[390px] flex flex-col bg-[#F9F1E7] p-8 rounded-lg gap-[20px] px-[75px] ">
                 <h1 className="font-semibold text-[32px] mb-6 text-center">Cart Totals</h1>
 

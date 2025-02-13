@@ -49,7 +49,7 @@ const ContactInformation = () => {
         </p>
       </div>
 
-      <div className="flex flex-row w-[1058px] h-[923px] justify-between items-center  ">
+      <div className="flex flex-row w-[1058px] h-[923px] justify-between items-start mt-[221px]  ">
         <div className="flex flex-col w-56 gap-2 items-center">
           <div className="font-poppins">
             <img src={local} alt="" className="w-[22px] h-[28px]" />
