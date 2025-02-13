@@ -1,6 +1,17 @@
-    import BillingDetails from "./BillingDetails";
+import BillingDetails from "./BillingDetails";
 import SubmitButton from "./ButtonSubmit";
+import { useState } from 'react';
+
+
+
     const CheckoutComponent = () => {
+        const [selectedOption, setSelectedOption] = useState(''); 
+       
+
+
+        const handleOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+          setSelectedOption(e.target.value); 
+        };
 
         return (
             <div className="flex gap-[26px] w-full justify-normal ">
@@ -14,19 +25,19 @@ import SubmitButton from "./ButtonSubmit";
                         </div>
                         <div className="flex justify-between text-[16px] font-normal">
                             <div className="flex gap-4">
-                                <p className="text-[9F9F9F]">Asgaard sofa</p>
-                                <p>X</p>
-                                <p>1</p>
+                                <p className="text-[9F9F9F]">{}</p>
+                                <p className="text-[12px]">X</p>
+                                <p className="text-[12px]">{}</p>
                             </div>
-                            <p className="text-[16px] font-light">Rs. 250,000.00</p>
+                            <p className="text-[16px] font-light">R${}</p>
                         </div>
                         <div className="flex justify-between text-[16px]">
                             <p className="font-normal">Subtotal</p>
-                            <p className="font-light">Rs. 250,000.00</p>
+                            <p className="font-light">R${}</p>
                         </div>
                         <div className="flex justify-between">
                             <p className="text-sm">Total</p>
-                            <p className="font-bold text-[#B88E2F] text-[24px]">Rs. 250,000.00</p>
+                            <p className="font-bold text-[#B88E2F] text-[24px]">Rs{}</p>
                         </div>
 
                         <hr className="border-gray8 mt-6 mb-4" />
@@ -52,8 +63,8 @@ import SubmitButton from "./ButtonSubmit";
                                         <input
                                             type="radio"
                                             value="directBankTransfer"
-                                            checked={false}
-                                            onChange={() => { }}
+                                            checked={selectedOption === 'directBankTransfer'}
+                                            onChange={handleOptionChange}
                                             className="mr-2"
                                         />
                                         Direct Bank Transfer
@@ -62,8 +73,8 @@ import SubmitButton from "./ButtonSubmit";
                                         <input
                                             type="radio"
                                             value="Cash On Delivery"
-                                            checked={false}
-                                            onChange={() => { }}
+                                            checked={selectedOption === 'Cash On Delivery'}
+                                            onChange={handleOptionChange}
                                             className="mr-2"
                                         />
                                         Cash On Delivery

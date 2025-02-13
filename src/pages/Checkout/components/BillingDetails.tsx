@@ -39,7 +39,7 @@ const BillingDetails = () => {
           id='billingForm' 
           onSubmit={handleSubmit(onSubmit)} 
           className="ml-[75px]">
-          <div className="flex font-medium text-[16px] mb-4">
+          <div className="flex font-medium text-[16px] mb-4 mr-[79px]">
             <div>
               <label htmlFor="firstName">First Name</label>
               <input

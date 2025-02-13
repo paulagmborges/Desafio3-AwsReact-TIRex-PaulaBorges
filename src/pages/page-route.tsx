@@ -2,13 +2,12 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Shop from './Shop';
 import ProductDetail from './ProductDetails';
-import Contact from './Contact/index'
-import CartComponent from './Cart/index'
-import Checkout from './Checkout/';
-import { SignUp,  } from '@clerk/clerk-react';
+import Contact from './Contact';
+import CartComponent from './Cart';
+import Checkout from './Checkout';
+import { SignUp } from '@clerk/clerk-react';
 import LoginComponent from './Login/component/loginTela';
-
-
+import ProtectedRoute from "../protect-route";
 
 export const PageRoute = () => {
     return (
@@ -17,14 +16,20 @@ export const PageRoute = () => {
             <Route path="/shop" element={<Shop />} />
             <Route path="/produto/:id" element={<ProductDetail />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/checkout" element={<Checkout />} />
-          
+            <Route path="/cart" element={<CartComponent />} />
             <Route path="/login" element={<LoginComponent />} />
             <Route path="/signup" element={<SignUp />} />
-            <Route path="/cart" element={<CartComponent />} />
 
-            
-           
+            {/* Rota protegida para Checkout */}
+            <Route 
+              path="/checkout" 
+              element={
+                <ProtectedRoute>
+                  <Checkout />
+                </ProtectedRoute>
+              } 
+            />
         </Routes>
     );
 };
+
