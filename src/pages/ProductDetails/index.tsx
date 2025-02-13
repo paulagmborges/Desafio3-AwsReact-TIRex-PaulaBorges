@@ -166,7 +166,7 @@ function ProductDetail() {
 
             
             <div className="flex mt-5">
-              <QuantitySelector />
+              <QuantitySelector product={product}  />
               <button
                 onClick={handleAddToCart}
                 className="border border-black rounded text-black font-semibold ml-4 px-4 py-2"

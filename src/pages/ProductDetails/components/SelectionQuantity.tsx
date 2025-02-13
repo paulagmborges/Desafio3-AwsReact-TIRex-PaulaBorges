@@ -1,7 +1,10 @@
 import  { useState } from "react";
+import { useCart } from '../../../hook/useCart';
 
-const QuantitySelector = () => {
+const QuantitySelector = ({product}) => {
   const [quantity, setQuantity] = useState(1);
+
+  const {addToCart } = useCart();
 
   const decrease = () => {
     if (quantity > 1) setQuantity(quantity - 1);
@@ -9,6 +12,11 @@ const QuantitySelector = () => {
 
   const increase = () => {
     setQuantity(quantity + 1);
+  };
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleAddToCart = () => {
+    addToCart({ ...product, quantidade: quantity }); 
+    console.log(`Produto ${product.titulo} adicionado com quantidade ${quantity}`);
   };
 
   return (

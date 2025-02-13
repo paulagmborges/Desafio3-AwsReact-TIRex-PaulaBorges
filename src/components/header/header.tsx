@@ -55,7 +55,7 @@ const Header = () => {
                     <ShoppingCart className="w-[23px] h-[19px] text-gray-700" />
                     {cart.length > 0 && (
                         <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
-                            {cart.length}
+                            {cart.reduce((total, item) => total + item.quantidade, 0)}
                         </span>
                     )}
                 </Link>

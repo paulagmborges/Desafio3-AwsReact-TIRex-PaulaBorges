@@ -13,7 +13,7 @@ const CartComponent = () => {
     const { cart, removeFromCart } = cartContext;
 
     const calculateSubtotal = () => {
-        return cart.reduce((total, item) => total + parseFloat(item.preco), 0);
+        return cart.reduce((total, item) => total + Number(item.preco), 0);
     };
 
     return (
@@ -45,7 +45,7 @@ const CartComponent = () => {
                                 <p className="ml-4 text-[16px]">{item.titulo}</p>
                             </div>
                             <p className="w-[120px] text-[16px] text-[#9F9F9F]">R$ {item.preco}</p>
-                            <p className="w-[100px] text-center">1</p>
+                            <p className="w-[100px] text-center">{item.quantidade}</p>
                             <p className="w-[120px] text-right">R$ {item.preco}</p>
                             <button
                                 className="w-[40px] flex justify-center text-[#C8A165]"

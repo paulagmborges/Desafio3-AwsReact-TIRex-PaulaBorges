@@ -8,22 +8,23 @@ const SocialLinks = () => {
     <div>
       <div className="flex gap-2">
         <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-          <div className="bg-white rounded-full w-[34px] h-[34px] flex justify-center items-center">
-            <img src={facebook} alt="Facebook" className="w-[18px] h-[18px]" />
+          <div className="bg-white rounded-full w-[34px] h-[34px] flex justify-center items-center shadow-lg ">
+            <img src={facebook} alt="Facebook" className="w-[18px] h-[18px]  ;
+ " />
           </div>
         </a>
         <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-          <div className="bg-white rounded-full w-[34px] h-[34px] flex justify-center items-center">
+          <div className="bg-white rounded-full w-[34px] h-[34px] flex justify-center items-center shadow-lg">
             <img src={instagram} alt="Instagram" className="w-[18px] h-[18px]" />
           </div>
         </a>
         <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-          <div className="bg-white rounded-full w-[34px] h-[34px] flex justify-center items-center">
+          <div className="bg-white rounded-full w-[34px] h-[34px] flex justify-center items-center shadow-lg">
             <img src={twitter} alt="Twitter" className="w-[18px] h-[18px]" />
           </div>
         </a>
         <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-          <div className="bg-white rounded-full w-[34px] h-[34px] flex justify-center items-center">
+          <div className="bg-white rounded-full w-[34px] h-[34px] flex justify-center items-center shadow-lg">
             <img src={linkedin} alt="LinkedIn" className="w-[18px] h-[18px]" />
           </div>
         </a>
