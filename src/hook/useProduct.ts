@@ -18,6 +18,7 @@ export interface UseProductsProps {
   maxPrice?: number; 
 }
 
+
 export const useProducts = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -38,14 +39,36 @@ export const useProducts = () => {
         setLoading(false);
       });
   }, []);
-
+    const getProducts = (filtros?:any)=>{
+      let url = "http://localhost:3001/products"
+      const parametros=[]
+      if (filtros?.category){
+        parametros.push(`category=${filtros.category}`)
+        
+      }
+      if(parametros.length>0){
+        url = url+`/?${parametros.join('&')}`
+      }
+      axios
+      .get(url)
+      .then((response) => {
+        console.log("Produtos carregados:", response.data);
+        setProducts(response.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Erro ao carregar produtos:", err);
+        setError("Erro ao carregar produtos.");
+        setLoading(false);
+      });
+    }
   if (loading) return { products: [], loading, error };
   if (error) return { products: [], loading, error };
 
 
   
 
-  return { products, loading, error };
+  return { products, loading, error ,getProducts};
 };
 
 

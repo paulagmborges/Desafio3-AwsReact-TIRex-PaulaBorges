@@ -44,6 +44,7 @@ function ProductDetail() {
   const [rating, setRating] = useState(4.5);
   const [selectedSize, setSelectedSize] = useState<string | null>(null); 
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [quantity, setQuantity] = useState(1);
 
   const navigate = useNavigate(); 
 
@@ -79,7 +80,8 @@ function ProductDetail() {
       const productToAdd = {
         ...product,
         precoSemDesconto: product.precoSemDesconto ?? '',
-        selectedSize, 
+        selectedSize,
+        quantidade: quantity
       };
       addToCart(productToAdd);
       console.log("Produto adicionado ao carrinho:", productToAdd);
@@ -166,7 +168,7 @@ function ProductDetail() {
 
             
             <div className="flex mt-5">
-              <QuantitySelector product={product}  />
+              <QuantitySelector onChange={setQuantity}  />
               <button
                 onClick={handleAddToCart}
                 className="border border-black rounded text-black font-semibold ml-4 px-4 py-2"

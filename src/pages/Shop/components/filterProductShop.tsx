@@ -10,7 +10,7 @@ export default function ProductFilter() {
   const filteredProducts = selectedCategory
   ? db.products.filter((product) => product.category === selectedCategory)
   : db.products;
-
+  
 
   return (
     <div className="p-4">
