@@ -6,7 +6,7 @@ interface FilterPopupProps {
   setCategory?:(category:string) => void
 }
 
-const categories = ["Sofa", "Chair", "Table","teste"];
+const categories = ["Sofa", "Chair", "Table","Decor"];
 
 const FilterPopup = ({ closePopup, setCategory }: FilterPopupProps) => {
   const [selectedCategory, setSelectedCategory] = useState('');

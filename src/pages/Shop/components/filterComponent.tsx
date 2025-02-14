@@ -13,7 +13,7 @@ const Filter = ({ openPopup, total, totalPage, currentPage }: Props) => {
 
 
   return (
-    <div className="flex justify-between pl-32 pb-7 pt-7 mb-12 h-[100px] bg-[#9F9F9F] font-poppins">
+    <div className="flex justify-between pl-32 pb-7 pt-7 mb-12 h-[100px] bg-[#F9F1F7] font-poppins">
       <div className="flex w-1/3 justify-between items-center">
         <img
           src={vectorfilter}

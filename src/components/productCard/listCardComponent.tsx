@@ -37,7 +37,7 @@ function ListProductComponent({ title, rows, paginate = false, isPopupOpen, clos
 
   const { products: displayedProducts, loading, error, getProducts, total, totalPage } = useProducts();
 
-  const pageSize = 8
+  const pageSize = 16
 
   const repeatedProducts = rows && rows > 0 ? displayedProducts.slice(0, (rows * 4)) : displayedProducts
 

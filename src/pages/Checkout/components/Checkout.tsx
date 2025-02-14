@@ -5,7 +5,7 @@ import { useCart } from '../../../hook/useCart';
 
 const CheckoutComponent = () => {
   const [selectedOption, setSelectedOption] = useState('');
-  const { cart } = useCart(); 
+  const { cart } = useCart();
 
 
   const calculateSubtotal = () => {
@@ -13,7 +13,7 @@ const CheckoutComponent = () => {
   };
 
   const getTotal = () => {
-    return calculateSubtotal(); 
+    return calculateSubtotal();
   };
 
 
@@ -34,7 +34,7 @@ const CheckoutComponent = () => {
                 <p className="text-[12px]">X</p>
                 <p className="text-[12px]">{product.quantidade || 1}</p>
               </div>
-              <p className="text-[16px] font-light">R${(Number(product.preco) * product.quantidade ||1)}</p>
+              <p className="text-[16px] font-light">R${(Number(product.preco) * product.quantidade || 1)}</p>
             </div>
           ))}
           <div className="flex justify-between text-[16px]">
@@ -49,9 +49,7 @@ const CheckoutComponent = () => {
           <hr className="border-gray8 mt-6 mb-4" />
 
           <div>
-            <div className="flex flex-col gap-5 mb-6 w-[528px] h-[107px]">
-              <div>
-                <label className="flex">
+          <label className="flex">
                   <input
                     type="radio"
                     value="directBankTransfer"
@@ -60,10 +58,22 @@ const CheckoutComponent = () => {
                     className="mr-2"
                   />
                   Direct Bank Transfer
+                </label> 
+            <p className="text-[16px] text-[#9F9F9F] font-light">
+              Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+            </p>
+            <div className="flex flex-col gap-5 mb-6 w-[528px] h-[107px] ">
+              <div>
+                <label className="flex text-[#9F9F9F]">
+                  <input
+                    type="radio"
+                    value="directBankTransfer"
+                    checked={selectedOption === 'directBankTransfer'}
+                    onChange={() => setSelectedOption('directBankTransfer')}
+                    className="mr-2 text-[#9F9F9F]"
+                  />
+                  Direct Bank Transfer
                 </label>
-                <p className="text-[16px] text-[#9F9F9F] font-light">
-                  Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
-                </p>
               </div>
               <div className="flex flex-col gap-[18px]">
                 <label className="flex text-[16px] text-[#9F9F9F] font-light">
