@@ -40,15 +40,11 @@ Furniro é um e-commerce de móveis desenvolvido em ReactJS com TypeScript, util
   npm install
 ```
 
-### 3️⃣ Inicie o JSON Server
+### 3️⃣ Inicie o JSON Server e o projto
 ```bash
   npm run start
 ```
 
-### 4️⃣ Inicie o projeto
-```bash
-  npm run dev
-```
 
 ## 🔒 Proteção de Rotas
 - Rotas de checkout são protegidas e exigem autenticação via Clerk.

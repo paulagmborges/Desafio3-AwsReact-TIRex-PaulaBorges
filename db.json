@@ -2,22 +2,39 @@
   "products": [
     {
       "id": 1,
-      "imageUrl": "/images/product1.svg",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product1.svg",
       "titulo": "Pingky",
       "subtitulo": "Cute bed set",
       "preco": 7000,
       "sku": "PING123",
-      "category": "Bed Sets",
-      "tags": ["Cute", "Bedding", "Sale"],
+      "category": "Sofa",
+      "tags": [
+        "Cute",
+        "Bedding",
+        "Sale"
+      ],
       "precoSemDesconto": 14000,
       "quantidade": 2,
       "rating": 4,
       "description": "Descrição do Pingky",
-      "sizes": ["L", "XL", "XS"],
+      "sizes": [
+        "L",
+        "XL",
+        "XS"
+      ],
       "colors": [
-        { "name": "Purple", "hex": "#816DFA" },
-        { "name": "Black", "hex": "#000000" },
-        { "name": "Brown", "hex": "#B88E2F" }
+        {
+          "name": "Purple",
+          "hex": "#816DFA"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#B88E2F"
+        }
       ],
       "tag": "50%"
     },
@@ -28,17 +45,34 @@
       "subtitulo": "Stylish cafe chair",
       "preco": 25000,
       "sku": "SYL123",
-      "category": "Chairs",
-      "tags": ["Stylish", "Cafe", "Furniture"],
+      "category": "Table",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
       "precoSemDesconto": 35000,
       "quantidade": 2,
       "rating": 5,
       "description": "Descrição do Syltherine",
-      "sizes": ["M", "L", "XL"],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
       "colors": [
-        { "name": "Red", "hex": "#FF0000" },
-        { "name": "Gray", "hex": "#808080" },
-        { "name": "Black", "hex": "#000000" }
+        {
+          "name": "Red",
+          "hex": "#FF0000"
+        },
+        {
+          "name": "Gray",
+          "hex": "#808080"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        }
       ],
       "tag": "50%"
     },
@@ -49,16 +83,29 @@
       "subtitulo": "Minimalist flower pot",
       "preco": 5000,
       "sku": "POT123",
-      "category": "Decor",
-      "tags": ["Minimalist", "Flower", "Pot"],
+      "category": "Sofa",
+      "tags": [
+        "Minimalist",
+        "Flower",
+        "Pot"
+      ],
       "precoSemDesconto": 0,
       "quantidade": 4,
       "rating": 3,
       "description": "Descrição do Potty",
-      "sizes": ["S", "M"],
+      "sizes": [
+        "S",
+        "M"
+      ],
       "colors": [
-        { "name": "White", "hex": "#FFFFFF" },
-        { "name": "Beige", "hex": "#F5F5DC" }
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        },
+        {
+          "name": "Beige",
+          "hex": "#F5F5DC"
+        }
       ],
       "tag": "New"
     },
@@ -69,16 +116,64 @@
       "subtitulo": "Outdoor bar table and stool",
       "preco": 5000,
       "sku": "RESP123",
-      "category": "Outdoor",
-      "tags": ["Outdoor", "Bar", "Table"],
+      "category": "Sofa",
+      "tags": [
+        "Outdoor",
+        "Bar",
+        "Table"
+      ],
       "precoSemDesconto": 0,
       "quantidade": 2,
       "rating": 4,
       "description": "Descrição do Respira",
-      "sizes": ["M", "L", "XL"],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
       "colors": [
-        { "name": "Green", "hex": "#008000" },
-        { "name": "Brown", "hex": "#A52A2A" }
+        {
+          "name": "Green",
+          "hex": "#008000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#A52A2A"
+        }
+      ],
+      "tag": "New"
+    },
+    {
+      "id": 5,
+      "imageUrl": "/images/product4.svg",
+      "titulo": "Respira",
+      "subtitulo": "Outdoor bar table and stool",
+      "preco": 5000,
+      "sku": "RESP123",
+      "category": "Sofa",
+      "tags": [
+        "Outdoor",
+        "Bar",
+        "Table"
+      ],
+      "precoSemDesconto": 0,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Respira",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "#008000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#A52A2A"
+        }
       ],
       "tag": "New"
     },
@@ -89,17 +184,34 @@
       "subtitulo": "Luxury big sofa",
       "preco": 7000,
       "sku": "LOL123",
-      "category": "Sofas",
-      "tags": ["Luxury", "Sofa", "Sale"],
+      "category": "Sofa",
+      "tags": [
+        "Luxury",
+        "Sofa",
+        "Sale"
+      ],
       "precoSemDesconto": 14000,
       "quantidade": 2,
       "rating": 5,
       "description": "Descrição do Lolito",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "colors": [
-        { "name": "Navy", "hex": "#000080" },
-        { "name": "Gray", "hex": "#D3D3D3" },
-        { "name": "Black", "hex": "#000000" }
+        {
+          "name": "Navy",
+          "hex": "#000080"
+        },
+        {
+          "name": "Gray",
+          "hex": "#D3D3D3"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        }
       ],
       "tag": "50%"
     },
@@ -110,16 +222,30 @@
       "subtitulo": "Outdoor bar table and stool",
       "preco": 5000,
       "sku": "RESP456",
-      "category": "Outdoor",
-      "tags": ["Outdoor", "Bar", "Table"],
+      "category": "Sofa",
+      "tags": [
+        "Outdoor",
+        "Bar",
+        "Table"
+      ],
       "precoSemDesconto": 0,
       "quantidade": 2,
       "rating": 3,
       "description": "Descrição do Respira",
-      "sizes": ["M", "L", "XL"],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
       "colors": [
-        { "name": "Green", "hex": "#008000" },
-        { "name": "Brown", "hex": "#A52A2A" }
+        {
+          "name": "Green",
+          "hex": "#008000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#A52A2A"
+        }
       ],
       "tag": "New"
     },
@@ -130,18 +256,380 @@
       "subtitulo": "Stylish cafe chair",
       "preco": 2000,
       "sku": "LEV123",
-      "category": "Chairs",
-      "tags": ["Stylish", "Cafe", "Furniture"],
+      "category": "Chair",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
       "precoSemDesconto": 12500,
       "quantidade": 2,
       "rating": 4,
       "description": "Descrição do Leviosa",
-      "sizes": ["XS", "S", "M"],
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
       "colors": [
-        { "name": "Pink", "hex": "#FFC0CB" },
-        { "name": "White", "hex": "#FFFFFF" }
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
       ],
       "tag": "70%"
+    },
+    {
+      "id": 9,
+      "imageUrl": "/images/product8.svg",
+      "titulo": "Teste filtro categoria",
+      "subtitulo": "Teste filtro categoria",
+      "preco": 999,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Leviosa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 10,
+      "imageUrl": "/images/product8.svg",
+      "titulo": "Teste filtro categoria",
+      "subtitulo": "Teste filtro categoria",
+      "preco": 999,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Leviosa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 11,
+      "imageUrl": "/images/product8.svg",
+      "titulo": "Teste filtro categoria",
+      "subtitulo": "Teste filtro categoria",
+      "preco": 999,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Leviosa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 12,
+      "imageUrl": "/images/product8.svg",
+      "titulo": "Teste filtro categoria",
+      "subtitulo": "Teste filtro categoria",
+      "preco": 999,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Leviosa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 13,
+      "imageUrl": "/images/product8.svg",
+      "titulo": "Teste filtro categoria",
+      "subtitulo": "Teste filtro categoria",
+      "preco": 999,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Leviosa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 14,
+      "imageUrl": "/images/product8.svg",
+      "titulo": "Teste filtro categoria",
+      "subtitulo": "Teste filtro categoria",
+      "preco": 999,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Leviosa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 15,
+      "imageUrl": "/images/product8.svg",
+      "titulo": "Teste filtro categoria",
+      "subtitulo": "Teste filtro categoria",
+      "preco": 999,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Leviosa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 16,
+      "imageUrl": "/images/product8.svg",
+      "titulo": "Teste filtro categoria",
+      "subtitulo": "Teste filtro categoria",
+      "preco": 999,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Leviosa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 17,
+      "imageUrl": "/images/product1.svg",
+      "titulo": "Pingky",
+      "subtitulo": "Cute bed set",
+      "preco": 7000,
+      "sku": "PING123",
+      "category": "Sofa",
+      "tags": [
+        "Cute",
+        "Bedding",
+        "Sale"
+      ],
+      "precoSemDesconto": 14000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Pingky",
+      "sizes": [
+        "L",
+        "XL",
+        "XS"
+      ],
+      "colors": [
+        {
+          "name": "Purple",
+          "hex": "#816DFA"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#B88E2F"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 18,
+      "imageUrl": "/images/product2.svg",
+      "titulo": "Syltherine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 25000,
+      "sku": "SYL123",
+      "category": "Table",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 35000,
+      "quantidade": 2,
+      "rating": 5,
+      "description": "Descrição do Syltherine",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "name": "Red",
+          "hex": "#FF0000"
+        },
+        {
+          "name": "Gray",
+          "hex": "#808080"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        }
+      ],
+      "tag": "50%"
     }
   ]
 }

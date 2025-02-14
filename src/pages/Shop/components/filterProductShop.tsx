@@ -1,7 +1,7 @@
 import { useState } from "react";
 import db from "../../../../db.json";
 
-const categories = ["Chairs", "Outdoor", "Decor", "Sofas"];
+const categories = ["Chair", "Table", "Decor", "Sofas"];
 
 export default function ProductFilter() {
   const [selectedCategory, setSelectedCategory] = useState<string>("");
@@ -13,14 +13,14 @@ export default function ProductFilter() {
   
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold mb-2">Filtrar por Categoria</h2>
+    <div className=" p-4">
+      <h2 className="text-xl font-bold mb-2">Filter by Category</h2>
       <select
-        className="p-2 border rounded mb-4"
+        className="  p-2 border rounded mb-4"
         value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
       >
-        <option value="">Todas</option>
+        <option value="">All</option>
         {categories.map((category) => (
           <option key={category} value={category}>
             {category}
@@ -28,7 +28,7 @@ export default function ProductFilter() {
         ))}
       </select>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="flex flex-col  gap-4">
         {filteredProducts.map((product) => (
           <div key={product.id} className="border p-4 rounded shadow">
             <img src={product.imageUrl} alt={product.titulo} className="w-full h-40 object-cover mb-2" />

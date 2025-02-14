@@ -1,13 +1,13 @@
 
 import ListProductComponent from '../../../components/productCard/listCardComponent'
 
-const RealatedProduct= () => {
+const RealatedProduct = () => {
   return (
     <div>
-         <ListProductComponent title="Our Products" rows={1} />
-         
+      <ListProductComponent title="Related Products" rows={1} />
+
     </div>
   )
 }
 
-export default  RealatedProduct
+export default RealatedProduct

@@ -1,19 +1,16 @@
-import  { useState } from 'react';  
-import FilterPopup from '../../Shop/components/FilterPopup'; 
 import vectorfilter from '../../../assets/img-shop/vector-filter.png';
 import vector from '../../../assets/img-shop/Vector1.png';
 import vector2 from '../../../assets/img-shop/vector2.png';
 
-const Filter = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false); 
+interface Props {
+  openPopup?: () => void
+  totalPage?: number
+  currentPage?: number
+  total?: number
+}
 
-  const openPopup = () => {
-    setIsPopupOpen(true); 
-  };
+const Filter = ({ openPopup, total, totalPage, currentPage }: Props) => {
 
-  const closePopup = () => {
-    setIsPopupOpen(false); 
-  };
 
   return (
     <div className="flex justify-between pl-32 pb-7 pt-7 mb-12 h-[100px] bg-[#9F9F9F] font-poppins">
@@ -32,7 +29,7 @@ const Filter = () => {
           src={vector2}
           className="w-[25px] h-[25px]"
         />
-        <p className="text-[16px] font-regular">Showing 1-16 of 32 results</p>
+        <p className="text-[16px] font-regular">Showing {currentPage || 0}-{totalPage || 0} of {total || 0} results</p>
       </div>
 
       <div className="flex w-1/3 items-center">
@@ -50,8 +47,8 @@ const Filter = () => {
         />
       </div>
 
-      
-      {isPopupOpen && <FilterPopup closePopup={closePopup} />}
+
+
     </div>
   );
 };
