@@ -324,7 +324,7 @@
       "subtitulo": "Stylish cafe chair",
       "preco": 9000,
       "sku": "LEV123",
-      "category": "teste",
+      "category": "Oudoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -358,7 +358,7 @@
       "subtitulo": "Luxury big sofa",
       "preco": 3000,
       "sku": "LEV123",
-      "category": "teste",
+      "category": "Outdoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -426,7 +426,7 @@
       "subtitulo": "Small muggo",
       "preco": 9000,
       "sku": "LEV123",
-      "category": "teste",
+      "category": "Outdoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -460,7 +460,7 @@
       "subtitulo": "Stylish cafe chair",
       "preco": 9000,
       "sku": "LEV123",
-      "category": "teste",
+      "category": "Outdoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -494,7 +494,7 @@
       "subtitulo": "",
       "preco": 5000,
       "sku": "LEV123",
-      "category": "teste",
+      "category": "Outdoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -528,7 +528,7 @@
       "subtitulo": "Stylish cafe chair",
       "preco": 2000,
       "sku": "LEV123",
-      "category": "teste",
+      "category": "Outdoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -595,12 +595,12 @@
     },
     {
       "id": 18,
-      "imageUrl": "/images/product2.svg",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
       "titulo": "Syltherine",
       "subtitulo": "Stylish cafe chair",
       "preco": 25000,
       "sku": "SYL123",
-      "category": "teste",
+      "category": "Outdoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -638,7 +638,7 @@
       "subtitulo": "Stylish cafe chair",
       "preco": 9000,
       "sku": "LEV123",
-      "category": "teste",
+      "category": "Outdoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -672,7 +672,7 @@
       "subtitulo": "Luxury big sofa",
       "preco": 3000,
       "sku": "LEV123",
-      "category": "teste",
+      "category": "Outdoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -706,7 +706,7 @@
       "subtitulo": "Stylish cafe chair",
       "preco": 3000,
       "sku": "LEV123",
-      "category": "teste",
+      "category": "Outdoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -740,7 +740,7 @@
       "subtitulo": "Small muggo",
       "preco": 9000,
       "sku": "LEV123",
-      "category": "teste",
+      "category": "Outdoor",
       "tags": [
         "Stylish",
         "Cafe",
@@ -909,7 +909,7 @@
     },
     {
       "id": 27,
-      "imageUrl": "/images/product2.svg",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
       "titulo": "Syltherine",
       "subtitulo": "Stylish cafe chair",
       "preco": 25000,
@@ -1223,7 +1223,7 @@
     },
     {
       "id": 36,
-      "imageUrl": "/images/product2.svg",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
       "titulo": "Syltherine",
       "subtitulo": "Stylish cafe chair",
       "preco": 25000,
