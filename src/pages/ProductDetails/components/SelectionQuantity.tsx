@@ -1,15 +1,28 @@
 import  { useState } from "react";
 
-const QuantitySelector = () => {
+interface SelectorProps{
+  onChange:(quantidade:number)=>void
+
+  
+}
+
+const QuantitySelector = ({onChange}:SelectorProps) => {
   const [quantity, setQuantity] = useState(1);
 
+  
+
   const decrease = () => {
-    if (quantity > 1) setQuantity(quantity - 1);
+    if (quantity > 1) {
+     setQuantity(quantity - 1); 
+     onChange(quantity -1)
+    }
   };
 
   const increase = () => {
     setQuantity(quantity + 1);
+    onChange(quantity +1)
   };
+
 
   return (
     <div className="flex items-center gap-0 rounded-tl-[10px] border-t border-opacity-0 w-[123px] h-[64px] justify-between

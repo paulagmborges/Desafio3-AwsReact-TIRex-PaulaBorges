@@ -25,10 +25,10 @@ export default function Pagination({ totalCount, currentPage, pageSize, onPageCh
                     <button
                         key={index}
                         className={classNames(
-                            "w-10 h-10 flex items-center justify-center border  text-sm",
+                            "w-10 h-10 flex items-center justify-center border font-light font-poppins text-[20px]",
                             {
                                 "bg-[#F9F1E7] text-black": page === currentPage,
-                                "text-[#FFFFFF] hover:bg-[#B88E2F]": page !== currentPage,
+                                "text-black hover:bg-[#B88E2F]": page !== currentPage,
                             }
                         )}
                         onClick={() => onPageChange(Number(page))}

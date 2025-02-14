@@ -1,12 +1,3 @@
-import share1 from '../../../assets/img-home/shareSection/share1.svg';
-import share2 from '../../../assets/img-home/shareSection/share2.svg';
-import share3 from '../../../assets/img-home/shareSection/share3.svg';
-import share4 from '../../../assets/img-home/shareSection/share4.svg';
-import share5 from '../../../assets/img-home/shareSection/share5.svg';
-import share6 from '../../../assets/img-home/shareSection/share6.svg';
-import share7 from '../../../assets/img-home/shareSection/share7.svg';
-import share9 from '../../../assets/img-home/shareSection/share9.jpg';
-import share8 from '../../../assets/img-home/shareSection/share8.svg';
 
 const Share = () => {
   return (
@@ -21,27 +12,27 @@ const Share = () => {
 
         <div className='flex flex-col gap-[16px] '>
           <div className='flex flex-row gap-[16px]'>
-            <img src={share1} alt="" className='' />
-            <img src={share2} alt="" className='w- self-end' />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/share1.svg" alt="" className='' />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/share2ComputadorHome.svg" alt="imagem computador" className='w- self-end' />
           </div>
           <div className='flex flex-row  gap-[16px]'>
-            <img src={share3} alt="" className=' ' />
-            <img src={share4} alt="" className='' />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/share3CadeiraHome.svg" alt="imagem cadeira" className=' ' />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/share42mesinhasHome.svg" alt="imagem mesinhas" className='' />
           </div>
         </div>
 
         <div className='flex items-center gap-[16px] '>
-          <img src={share5} alt="" className='' />
+          <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/share5saladejantarHome.svg" alt="imagem sala de jantar" className='' />
         </div>
 
         <div className='flex flex-col gap-[16px] '>
           <div className='flex fle-row gap-[16px]  ' >
-            <img src={share6} alt="" className=' self-end ' />
-            <img src={share7} alt="" className=' ' />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/share6CamaHome.svg" alt="imagem cama" className=' self-end ' />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/share7CopaHome.svg" alt="imagem copa" className=' ' />
           </div>
           <div className='flex flex-row gap-[16px] '>
-            <img src={share8} alt="" className='' />
-            <img src={share9} alt="" className='' />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/share8VasoHome.svg" alt="imagem vaso de planta" className='' />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/share9cozinhaHome.jpg" alt="imagem cozinha" className='' />
           </div>
         </div>
       </div>

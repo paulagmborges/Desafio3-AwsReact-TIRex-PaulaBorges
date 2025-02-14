@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# 🛋️ Furniro - E-commerce de Móveis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Sobre o Projeto
+Furniro é um e-commerce de móveis desenvolvido em ReactJS com TypeScript, utilizando JSON Server para simular um banco de dados. O projeto inclui funcionalidades como autenticação de usuários, carrinho de compras com Context API, paginação e filtros, carregamento dinâmico de dados e integração com a API ViaCEP.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
+- **ReactJS** + **TypeScript** + **Tailwind CSS**
+- **React Router** para gestão de rotas
+- **Context API** para gerenciamento de estado do carrinho
+- **Clerk** para autenticação
+- **Axios** para requisições HTTP
+- **JSON Server** para simular um backend RESTful
+- **SplideJS** para carrossel de produtos
+- **API ViaCEP** para preenchimento automático do endereço
+- **AWS EC2** para hospedagem
+- **AWS S3** para armazenamento de imagens
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Funcionalidades e requisitos
+- Layout fiel ao design do Figma.
+- **Header fixo** com navegação entre Home, Shop, About, Contact e botão de login/carrinho.
+- **Footer fixo** com links para redes sociais e campo para e-mail.
+- **Listagem de produtos** com paginação e filtros.
+- **Detalhes do produto**, permitindo adicionar ao carrinho.
+- **Carrinho de compras** com overlay e página dedicada, permitindo adicionar/remover itens.
+- **Checkout protegido**, obrigando login antes da compra.
+- **Autofill de endereço** via API do ViaCEP.
+- **Loading spinners** para feedback de carregamento.
+- **Armazenamento de imagens no AWS S3**.
+- **Hospedagem da aplicação na AWS EC2**.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📥 Instalação e Execução
+### 1️⃣ Clone o repositório
+```bash
+  git clone git@github.com:paulagmborges/Desafio3-AwsReact-TIRex-PaulaBorges.git 
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 2️⃣ Instale as dependências
+```bash
+  npm install
 ```
+
+### 3️⃣ Inicie o JSON Server e o projto
+```bash
+  npm run start
+```
+
+
+## 🔒 Proteção de Rotas
+- Rotas de checkout são protegidas e exigem autenticação via Clerk.
+
+## 📌 Autor
+Paula Borges
+
+---
+Projeto desenvolvido como parte do desafio 3 do PB - AWS REACTJS  DESAFIO 03 da Compass.uol
+

@@ -1,13 +1,14 @@
-import { createContext,  useState, ReactNode } from "react";
+import { createContext, useState, ReactNode } from "react";
 
 export interface Product {
   id: number;
   imageUrl: string;
   titulo: string;
   subtitulo: string;
-  preco: string| number;
+  preco: string | number;
   tag?: string;
   precoSemDesconto: string | number;
+  quantidade: number;
 }
 
 export interface CartContextType {
@@ -16,25 +17,33 @@ export interface CartContextType {
   removeFromCart: (id: number) => void;
   isOpen: boolean;
   toggleCart: () => void;
+  clearCart: () => void;
 }
 
-
-
 const CartContext = createContext<CartContextType | undefined>(undefined);
-
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<Product[]>([]);
   const [isOpen, setIsOpen] = useState(false);
 
-const addToCart = (item: Product) => {
-    setCart((prevCart) => [...prevCart, item]);
+  const addToCart = (item: Product) => {
+    setCart((prevCart) => {
+      const itemExists = prevCart.find((cartItem) => cartItem.id === item.id);
+      if (itemExists) {
+        return prevCart.map((cartItem) =>
+          cartItem.id === item.id
+            ? { ...cartItem, quantidade: cartItem.quantidade + 1 }
+            : cartItem
+        );
+      }
+      return [...prevCart, {  ...item, quantidade: item.quantidade }];
+    });
   };
-
 
   const removeFromCart = (id: number) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id));
   };
+
   const clearCart = () => {
     setCart([]);
   };
@@ -44,13 +53,14 @@ const addToCart = (item: Product) => {
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, removeFromCart, clearCart, isOpen, toggleCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart, isOpen, toggleCart }}>
       {children}
     </CartContext.Provider>
   );
 };
 
-export default CartContext
+export default CartContext;
+
 
 
 

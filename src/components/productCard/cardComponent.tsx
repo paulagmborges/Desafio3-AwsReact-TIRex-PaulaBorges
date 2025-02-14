@@ -8,7 +8,6 @@ interface CardProps {
   precoSemDesconto?: string | number
 }
 
-
 export default function CardComponent({
   imageUrl,
   tag,
@@ -21,9 +20,6 @@ export default function CardComponent({
   const isDiscount = tag.includes('%');
   const isNew = tag.toUpperCase() === 'NEW';
   const bgColor = isDiscount ? "bg-[#E97171]" : isNew ? "bg-[#2EC1AC]" : "bg-gray-300"; 
-
-
-
 
   return (
     <div className="w-[295px] h-[446px] flex gap-2 flex-col bg-[#F4F5F7] font-poppins p-2 relative">

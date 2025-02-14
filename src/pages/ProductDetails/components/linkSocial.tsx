@@ -1,6 +1,4 @@
-import singeprodface from '../../../assets/img-product-detail/singleprodface.png'
-import singeprodtwiter from '../../../assets/img-product-detail/singleprodtwitwr.png'
-import singeprodlinkedin from '../../../assets/img-product-detail/singleprodlinkedin.png'
+
 
 interface LinkSocialProps {
     sku: string;
@@ -21,9 +19,9 @@ const LinkSocial = ({ sku, category, tags = [] }: LinkSocialProps) => {
 
             <div className="flex gap-[25px] p-1">
                 <p>Share:</p>
-                <img src={singeprodface} alt="Facebook Icon" className="w-[20px] h-[20px]" />
-                <img src={singeprodtwiter} alt="Twitter Icon" className="w-[20px] h-[20px]" />
-                <img src={singeprodlinkedin} alt="LinkedIn Icon" className="w-[20px] h-[20px]" />
+                <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/singleprodface-detail.png" alt="Facebook Icon" className="w-[20px] h-[20px]" />
+                <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/singleprodtwitwr-detail.png" alt="Twitter Icon" className="w-[20px] h-[20px]" />
+                <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/singleprodlinkedin-detail.png" alt="LinkedIn Icon" className="w-[20px] h-[20px]" />
 
             </div>
         </div>

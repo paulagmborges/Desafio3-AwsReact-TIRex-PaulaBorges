@@ -9,6 +9,7 @@ export interface AddToCartButtonProps {
     imageUrl: string;
     subtitulo: string;
     precoSemDesconto: string | number ;
+    quantidade:number
   };
 }
 
@@ -18,7 +19,8 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
-    addToCart(product);
+    const productToAdd = { ...product, quantidade: 1 };
+    addToCart(productToAdd);
     console.log(`Produto adicionado ao carrinho: ${product.titulo}`);
   };
 

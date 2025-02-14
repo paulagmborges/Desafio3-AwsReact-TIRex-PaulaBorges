@@ -1,10 +1,5 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-
-import sectionIspiration1 from "../../../assets/img-home/sectionIspiration1.svg";
-import sectionIspiration2 from "../../../assets/img-home/sectionInspiration2.svg";
-import sectionImage4 from "../../../assets/img-home/sectionImage4.png";
-import VectorCarousel from '../../../assets/img-home/VectorCarousel.svg'
 import './style.css';
 
 const Carousel = () => {
@@ -32,7 +27,7 @@ const Carousel = () => {
         <SplideSlide className="first-slide">
           <div className="image-container">
             <img
-              src={sectionIspiration1}
+              src='https://meu-app-imagens.s3.us-east-1.amazonaws.com/quartoCarroselHome.svg'
               alt="Inspiração 1"
               className="carousel-image"
             />
@@ -41,7 +36,7 @@ const Carousel = () => {
               <p className="inner">Inner Peace</p>
 
               <button className="square-button">
-                <img src={VectorCarousel} alt="Vetor" className="vector-icon" />
+                <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/VectorCarousel.svg" alt="Vetor Coursel" className="vector-icon" />
               </button>
             </div>
           </div>
@@ -49,7 +44,7 @@ const Carousel = () => {
         <SplideSlide>
           <div className="image-container">
             <img
-              src={sectionIspiration2}
+              src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/cozinhaCarroselHome.svg"
               alt="Inspiração 2"
               className="carousel-image"
             />
@@ -58,7 +53,7 @@ const Carousel = () => {
               <p className="inner">Inner Peace</p>
 
               <button className="square-button">
-                <img src={VectorCarousel} alt="Vetor" className="vector-icon" />
+                <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/VectorCarousel.svg" alt="Vetor" className="vector-icon" />
               </button>
             </div>
           </div>
@@ -67,8 +62,8 @@ const Carousel = () => {
         <SplideSlide>
           <div className="image-container">
             <img
-              src={sectionImage4}
-              alt="Inspiração 3"
+              src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/mesinhaCarroselHome.png"
+              alt="Imagem carousel 3"
               className="carousel-image"
             />
             
@@ -77,7 +72,7 @@ const Carousel = () => {
               <p className="bedRoom">01 - Bed Room</p>
               <p className="inner">Inner Peace</p>
               <button className="square-button">
-                <img src={VectorCarousel} alt="Vetor" className="vector-icon" />
+                <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/VectorCarousel.svg" alt="Vetor" className="vector-icon" />
               </button>
             </div>
           </div>

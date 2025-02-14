@@ -5,12 +5,6 @@ import { useCart } from '../../hook/useCart';
 import { useNavigate } from "react-router-dom";
 
 import QuantitySelector from './components/SelectionQuantity';
-
-import image1 from '../../assets/img-product-detail/image1.svg';
-import image2 from '../../assets/img-product-detail/image2.svg';
-import image3 from '../../assets/img-product-detail/image3.svg';
-import image4 from '../../assets/img-product-detail/image4.svg';
-
 import Stars from './components/Stars';
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
@@ -44,6 +38,7 @@ function ProductDetail() {
   const [rating, setRating] = useState(4.5);
   const [selectedSize, setSelectedSize] = useState<string | null>(null); 
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [quantity, setQuantity] = useState(1);
 
   const navigate = useNavigate(); 
 
@@ -79,7 +74,8 @@ function ProductDetail() {
       const productToAdd = {
         ...product,
         precoSemDesconto: product.precoSemDesconto ?? '',
-        selectedSize, 
+        selectedSize,
+        quantidade: quantity
       };
       addToCart(productToAdd);
       console.log("Produto adicionado ao carrinho:", productToAdd);
@@ -96,10 +92,10 @@ function ProductDetail() {
       <div className="h-[820px]">
         <div className="flex flex-row w-full h-[730px] gap-[84px] justify-center items-center">
           <div className="flex flex-col gap-[32px] w-[72px] h-[416px] mb-[80px]">
-            <img src={image1} alt="imagem 1" className="w-[76px] h-[80px]" />
-            <img src={image2} alt="imagem 2" className="w-[76px] h-[80px]" />
-            <img src={image3} alt="imagem 3" className="w-[76px] h-[80px]" />
-            <img src={image4} alt="imagem 4" className="w-[76px] h-[80px]" />
+            <img src={product.imageUrl} alt="imagem 1" className="w-[76px] h-[80px]" />
+            <img src={product.imageUrl} alt="imagem 2" className="w-[76px] h-[80px]" />
+            <img src={product.imageUrl} alt="imagem 3" className="w-[76px] h-[80px]" />
+            <img src={product.imageUrl} alt="imagem 4" className="w-[76px] h-[80px]" />
           </div>
 
           <div className="flex flex-col">
@@ -166,7 +162,7 @@ function ProductDetail() {
 
             
             <div className="flex mt-5">
-              <QuantitySelector />
+              <QuantitySelector onChange={setQuantity}  />
               <button
                 onClick={handleAddToCart}
                 className="border border-black rounded text-black font-semibold ml-4 px-4 py-2"

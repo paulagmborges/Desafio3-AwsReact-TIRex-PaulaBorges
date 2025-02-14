@@ -2,146 +2,1262 @@
   "products": [
     {
       "id": 1,
-      "imageUrl": "/images/product1.svg",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product1.svg",
       "titulo": "Pingky",
       "subtitulo": "Cute bed set",
       "preco": 7000,
       "sku": "PING123",
-      "category": "Bed Sets",
-      "tags": ["Cute", "Bedding", "Sale"],
+      "category": "Sofa",
+      "tags": [
+        "Cute",
+        "Bedding",
+        "Sale"
+      ],
       "precoSemDesconto": 14000,
       "quantidade": 2,
       "rating": 4,
       "description": "Descrição do Pingky",
-      "sizes": ["L", "XL", "XS"],
+      "sizes": [
+        "L",
+        "XL",
+        "XS"
+      ],
       "colors": [
-        { "name": "Purple", "hex": "#816DFA" },
-        { "name": "Black", "hex": "#000000" },
-        { "name": "Brown", "hex": "#B88E2F" }
+        {
+          "name": "Purple",
+          "hex": "#816DFA"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#B88E2F"
+        }
       ],
       "tag": "50%"
     },
     {
       "id": 2,
-      "imageUrl": "/images/product2.svg",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
       "titulo": "Syltherine",
       "subtitulo": "Stylish cafe chair",
       "preco": 25000,
       "sku": "SYL123",
-      "category": "Chairs",
-      "tags": ["Stylish", "Cafe", "Furniture"],
+      "category": "Table",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
       "precoSemDesconto": 35000,
       "quantidade": 2,
       "rating": 5,
       "description": "Descrição do Syltherine",
-      "sizes": ["M", "L", "XL"],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
       "colors": [
-        { "name": "Red", "hex": "#FF0000" },
-        { "name": "Gray", "hex": "#808080" },
-        { "name": "Black", "hex": "#000000" }
+        {
+          "name": "Red",
+          "hex": "#FF0000"
+        },
+        {
+          "name": "Gray",
+          "hex": "#808080"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        }
       ],
       "tag": "50%"
     },
     {
       "id": 3,
-      "imageUrl": "/images/product3.svg",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product3.svg",
       "titulo": "Potty",
       "subtitulo": "Minimalist flower pot",
       "preco": 5000,
       "sku": "POT123",
-      "category": "Decor",
-      "tags": ["Minimalist", "Flower", "Pot"],
+      "category": "Sofa",
+      "tags": [
+        "Minimalist",
+        "Flower",
+        "Pot"
+      ],
       "precoSemDesconto": 0,
-      "quantidade": 2,
+      "quantidade": 4,
       "rating": 3,
       "description": "Descrição do Potty",
-      "sizes": ["S", "M"],
+      "sizes": [
+        "S",
+        "M"
+      ],
       "colors": [
-        { "name": "White", "hex": "#FFFFFF" },
-        { "name": "Beige", "hex": "#F5F5DC" }
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        },
+        {
+          "name": "Beige",
+          "hex": "#F5F5DC"
+        }
       ],
       "tag": "New"
     },
     {
       "id": 4,
-      "imageUrl": "/images/product4.svg",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product7.svg",
       "titulo": "Respira",
       "subtitulo": "Outdoor bar table and stool",
       "preco": 5000,
       "sku": "RESP123",
-      "category": "Outdoor",
-      "tags": ["Outdoor", "Bar", "Table"],
+      "category": "Sofa",
+      "tags": [
+        "Outdoor",
+        "Bar",
+        "Table"
+      ],
       "precoSemDesconto": 0,
       "quantidade": 2,
       "rating": 4,
       "description": "Descrição do Respira",
-      "sizes": ["M", "L", "XL"],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
       "colors": [
-        { "name": "Green", "hex": "#008000" },
-        { "name": "Brown", "hex": "#A52A2A" }
+        {
+          "name": "Green",
+          "hex": "#008000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#A52A2A"
+        }
+      ],
+      "tag": "New"
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product5.svg",
+      "titulo": "Grifo",
+      "subtitulo": "Night Lamp",
+      "preco": 5000,
+      "sku": "RESP123",
+      "category": "Decor",
+      "tags": [
+        "Outdoor",
+        "Bar",
+        "Table"
+      ],
+      "precoSemDesconto": 0,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Grifo",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "name": "Green",
+          "hex": "#008000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#A52A2A"
+        }
       ],
       "tag": "New"
     },
     {
       "id": 6,
-      "imageUrl": "/images/product6.svg",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product6.svg",
       "titulo": "Lolito",
       "subtitulo": "Luxury big sofa",
       "preco": 7000,
       "sku": "LOL123",
-      "category": "Sofas",
-      "tags": ["Luxury", "Sofa", "Sale"],
+      "category": "Sofa",
+      "tags": [
+        "Luxury",
+        "Sofa",
+        "Sale"
+      ],
       "precoSemDesconto": 14000,
       "quantidade": 2,
       "rating": 5,
       "description": "Descrição do Lolito",
-      "sizes": ["S", "M", "L"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "colors": [
-        { "name": "Navy", "hex": "#000080" },
-        { "name": "Gray", "hex": "#D3D3D3" },
-        { "name": "Black", "hex": "#000000" }
+        {
+          "name": "Navy",
+          "hex": "#000080"
+        },
+        {
+          "name": "Gray",
+          "hex": "#D3D3D3"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        }
       ],
       "tag": "50%"
     },
     {
       "id": 7,
-      "imageUrl": "/images/product7.svg",
-      "titulo": "Respira",
-      "subtitulo": "Outdoor bar table and stool",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product4.svg",
+      "titulo": "Muggo",
+      "subtitulo": "Small mug",
       "preco": 5000,
       "sku": "RESP456",
-      "category": "Outdoor",
-      "tags": ["Outdoor", "Bar", "Table"],
+      "category": "Sofa",
+      "tags": [
+        "Outdoor",
+        "Bar",
+        "Table"
+      ],
       "precoSemDesconto": 0,
       "quantidade": 2,
       "rating": 3,
-      "description": "Descrição do Respira",
-      "sizes": ["M", "L", "XL"],
+      "description": "Descrição do Muggo",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
       "colors": [
-        { "name": "Green", "hex": "#008000" },
-        { "name": "Brown", "hex": "#A52A2A" }
+        {
+          "name": "Green",
+          "hex": "#008000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#A52A2A"
+        }
       ],
       "tag": "New"
     },
     {
       "id": 8,
-      "imageUrl": "/images/product8.svg",
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product8.svg",
       "titulo": "Leviosa",
       "subtitulo": "Stylish cafe chair",
       "preco": 2000,
       "sku": "LEV123",
-      "category": "Chairs",
-      "tags": ["Stylish", "Cafe", "Furniture"],
+      "category": "Chair",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
       "precoSemDesconto": 12500,
       "quantidade": 2,
       "rating": 4,
       "description": "Descrição do Leviosa",
-      "sizes": ["XS", "S", "M"],
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
       "colors": [
-        { "name": "Pink", "hex": "#FFC0CB" },
-        { "name": "White", "hex": "#FFFFFF" }
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
       ],
       "tag": "70%"
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product1.svg",
+      "titulo": "Pingky",
+      "subtitulo": "Cute bed set",
+      "preco": 1.500,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 3000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Pingky",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Sylterine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 9000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 4500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 11,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product6.svg",
+      "titulo": "Lolito",
+      "subtitulo": "Luxury big sofa",
+      "preco": 3000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 1500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Lolito",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 12,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Sylterine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 3000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 13,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product5.svg",
+      "titulo": "Muggo",
+      "subtitulo": "Small muggo",
+      "preco": 9000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 4500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Muggo",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 14,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Sylterine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 9000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 6000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "60%"
+    },
+    {
+      "id": 15,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product7.svg",
+      "titulo": "Respira",
+      "subtitulo": "",
+      "preco": 5000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 2500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Respiraa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 16,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Syltherine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 2000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 1000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 17,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product7.svg",
+      "titulo": "Pingky",
+      "subtitulo": "Cute bed set",
+      "preco": 7000,
+      "sku": "PING123",
+      "category": "Outdoor",
+      "tags": [
+        "Cute",
+        "Bedding",
+        "Sale"
+      ],
+      "precoSemDesconto": 14000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Pingky",
+      "sizes": [
+        "L",
+        "XL",
+        "XS"
+      ],
+      "colors": [
+        {
+          "name": "Purple",
+          "hex": "#816DFA"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#B88E2F"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 18,
+      "imageUrl": "/images/product2.svg",
+      "titulo": "Syltherine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 25000,
+      "sku": "SYL123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 35000,
+      "quantidade": 2,
+      "rating": 5,
+      "description": "Descrição do Syltherine",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "name": "Red",
+          "hex": "#FF0000"
+        },
+        {
+          "name": "Gray",
+          "hex": "#808080"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 19,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Sylterine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 9000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 4500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 20,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product6.svg",
+      "titulo": "Lolito",
+      "subtitulo": "Luxury big sofa",
+      "preco": 3000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 1500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Lolito",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 21,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Sylterine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 3000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 22,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product5.svg",
+      "titulo": "Muggo",
+      "subtitulo": "Small muggo",
+      "preco": 9000,
+      "sku": "LEV123",
+      "category": "teste",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 4500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Muggo",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 23,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Sylterine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 9000,
+      "sku": "LEV123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 6000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "60%"
+    },
+    {
+      "id": 24,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product7.svg",
+      "titulo": "Respira",
+      "subtitulo": "",
+      "preco": 5000,
+      "sku": "LEV123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 2500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Respiraa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 25,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Syltherine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 2000,
+      "sku": "LEV123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 1000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 26,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product7.svg",
+      "titulo": "Pingky",
+      "subtitulo": "Cute bed set",
+      "preco": 7000,
+      "sku": "PING123",
+      "category": "Outdoor",
+      "tags": [
+        "Cute",
+        "Bedding",
+        "Sale"
+      ],
+      "precoSemDesconto": 14000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Pingky",
+      "sizes": [
+        "L",
+        "XL",
+        "XS"
+      ],
+      "colors": [
+        {
+          "name": "Purple",
+          "hex": "#816DFA"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#B88E2F"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 27,
+      "imageUrl": "/images/product2.svg",
+      "titulo": "Syltherine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 25000,
+      "sku": "SYL123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 35000,
+      "quantidade": 2,
+      "rating": 5,
+      "description": "Descrição do Syltherine",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "name": "Red",
+          "hex": "#FF0000"
+        },
+        {
+          "name": "Gray",
+          "hex": "#808080"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 28,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Sylterine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 9000,
+      "sku": "LEV123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 4500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 29,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product6.svg",
+      "titulo": "Lolito",
+      "subtitulo": "Luxury big sofa",
+      "preco": 3000,
+      "sku": "LEV123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 1500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Lolito",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 30,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Sylterine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 3000,
+      "sku": "LEV123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 9999,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 31,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product5.svg",
+      "titulo": "Muggo",
+      "subtitulo": "Small muggo",
+      "preco": 9000,
+      "sku": "LEV123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 4500,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Muggo",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 32,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Sylterine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 9000,
+      "sku": "LEV123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 6000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "60%"
+    },
+    {
+      "id": 33,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product7.svg",
+      "titulo": "Respira",
+      "subtitulo": "",
+      "preco": 5000,
+      "sku": "LEV123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 2500,
+      "quantidade": 2,
+      "rating": 3,
+      "description": "Descrição do Respiraa",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 34,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product2.svg",
+      "titulo": "Syltherine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 2000,
+      "sku": "LEV123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 1000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Sylterine",
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#FFC0CB"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "tag": "70%"
+    },
+    {
+      "id": 35,
+      "imageUrl": "https://meu-app-imagens.s3.us-east-1.amazonaws.com/product7.svg",
+      "titulo": "Pingky",
+      "subtitulo": "Cute bed set",
+      "preco": 7000,
+      "sku": "PING123",
+      "category": "Outdoor",
+      "tags": [
+        "Cute",
+        "Bedding",
+        "Sale"
+      ],
+      "precoSemDesconto": 14000,
+      "quantidade": 2,
+      "rating": 4,
+      "description": "Descrição do Pingky",
+      "sizes": [
+        "L",
+        "XL",
+        "XS"
+      ],
+      "colors": [
+        {
+          "name": "Purple",
+          "hex": "#816DFA"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        },
+        {
+          "name": "Brown",
+          "hex": "#B88E2F"
+        }
+      ],
+      "tag": "50%"
+    },
+    {
+      "id": 36,
+      "imageUrl": "/images/product2.svg",
+      "titulo": "Syltherine",
+      "subtitulo": "Stylish cafe chair",
+      "preco": 25000,
+      "sku": "SYL123",
+      "category": "Outdoor",
+      "tags": [
+        "Stylish",
+        "Cafe",
+        "Furniture"
+      ],
+      "precoSemDesconto": 35000,
+      "quantidade": 2,
+      "rating": 5,
+      "description": "Descrição do Syltherine",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "name": "Red",
+          "hex": "#FF0000"
+        },
+        {
+          "name": "Gray",
+          "hex": "#808080"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        }
+      ],
+      "tag": "50%"
     }
   ]
 }
