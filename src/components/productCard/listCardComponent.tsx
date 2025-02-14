@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AddToCartButton from "../cart/AddToCartButton";
 import FilterPopup from "../../pages/Shop/components/FilterPopup";
+import Spinner from "../spinner/Spinner";
 
 export interface Product {
   id: number;
@@ -66,7 +67,9 @@ function ListProductComponent({ title, rows, paginate = false, isPopupOpen, clos
     totalPage
   })
 
-  if (loading) return <p>Carregando produtos...</p>;
+  if (loading) return 
+   <Spinner />;
+  
   if (error) return <p>Erro ao carregar produtos.</p>;
 
 

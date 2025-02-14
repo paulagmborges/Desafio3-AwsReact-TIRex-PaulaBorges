@@ -39,11 +39,11 @@ const CheckoutComponent = () => {
           ))}
           <div className="flex justify-between text-[16px]">
             <p className="font-normal">Subtotal</p>
-            <p className="font-light">R${calculateSubtotal().toFixed(2)}</p>
+            <p className="font-light">R${calculateSubtotal()}</p>
           </div>
           <div className="flex justify-between">
             <p className="text-sm">Total</p>
-            <p className="font-bold text-[#B88E2F] text-[24px]">R${getTotal().toFixed(2)}</p>
+            <p className="font-bold text-[#B88E2F] text-[24px]">R${getTotal()}</p>
           </div>
 
           <hr className="border-gray8 mt-6 mb-4" />
@@ -68,8 +68,8 @@ const CheckoutComponent = () => {
                   <input
                     type="radio"
                     value="directBankTransfer"
-                    checked={selectedOption === 'directBankTransfer'}
-                    onChange={() => setSelectedOption('directBankTransfer')}
+                    checked={selectedOption === 'directBankTransferId'}
+                    onChange={() => setSelectedOption('directBankTransferId')}
                     className="mr-2 text-[#9F9F9F]"
                   />
                   Direct Bank Transfer
@@ -87,8 +87,8 @@ const CheckoutComponent = () => {
                   Cash On Delivery
                 </label>
                 <p className="text-[16px] font-light">
-                  Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our
-                  <span className="font-semibold">privacy policy</span>.
+                  Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our 
+                  <span className="font-semibold"> privacy policy</span>.
                 </p>
 
                 <SubmitButton />

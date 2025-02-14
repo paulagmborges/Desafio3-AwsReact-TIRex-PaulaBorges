@@ -15,6 +15,10 @@ export interface CartContextType {
   cart: Product[];
   addToCart: (item: Product) => void;
   removeFromCart: (id: number) => void;
+ 
+  increaseQuantity: (id: number) => void;
+  decreaseQuantity: (id: number) => void;
+
   isOpen: boolean;
   toggleCart: () => void;
   clearCart: () => void;
@@ -44,6 +48,26 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
+  const increaseQuantity = (id: number) => {
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === id ? { ...item, quantidade: item.quantidade + 1 } : item
+      )
+    );
+  };
+
+  const decreaseQuantity = (id: number) => {
+    setCart((prevCart) =>
+      prevCart
+        .map((item) =>
+          item.id === id
+            ? { ...item, quantidade: item.quantidade > 1 ? item.quantidade - 1 : 1 }
+            : item
+        )
+        .filter((item) => item.quantidade > 0)
+    );
+  };
+
   const clearCart = () => {
     setCart([]);
   };
@@ -53,7 +77,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart, isOpen, toggleCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart, isOpen, toggleCart }}>
       {children}
     </CartContext.Provider>
   );
