@@ -1,5 +1,3 @@
-import sofa1 from '../../../assets/img-product-detail/sofa1.svg'
-import sofa2 from '../../../assets/img-product-detail/sofa2.svg'
 
  const Description = () => {
   return (
@@ -31,12 +29,12 @@ import sofa2 from '../../../assets/img-product-detail/sofa2.svg'
       </div>
       <div className="flex gap-4 m-auto mt-10 mb-14">
         <img
-          src={sofa1}
-          alt=""
+          src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/sofa1-page-detail.svg"
+          alt="primeiro sofa"
         />
         <img
-          src={sofa2}
-          alt=""
+          src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/sofa2-page-detail.svg"
+          alt="segundo sofa"
         />
       </div>
 

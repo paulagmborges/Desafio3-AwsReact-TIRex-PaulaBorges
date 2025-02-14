@@ -1,6 +1,5 @@
 
 import Carousel from './carousel'
-
 import "@splidejs/splide/dist/css/splide.min.css";
 
 const Inspiration = () => {

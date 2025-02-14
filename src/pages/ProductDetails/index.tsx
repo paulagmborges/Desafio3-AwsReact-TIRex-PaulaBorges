@@ -5,8 +5,6 @@ import { useCart } from '../../hook/useCart';
 import { useNavigate } from "react-router-dom";
 
 import QuantitySelector from './components/SelectionQuantity';
-
-
 import Stars from './components/Stars';
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';

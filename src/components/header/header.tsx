@@ -1,4 +1,4 @@
-import logoHeader from '../../assets/icons/logoHeader.svg'
+
 import { Link } from 'react-router-dom'
 import { ShoppingCart, User } from "lucide-react";
 import { useAuth } from '@clerk/clerk-react';
@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <header className='flex justify-between py-[30px] pl-[54px] pr-[100px] '>
             <div className="flex flex-row items-center justify-center  gap-[5px] ">
-                <img src={logoHeader} alt="logo" className='w-[50px] h-[32px] ' />
+                <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/logoHeader.svg" alt="logo" className='w-[50px] h-[32px] ' />
                 <h1 className="font-montserrat text-[34px] font-bold leading-[41.45px] ">Funrio</h1>
             </div>
 

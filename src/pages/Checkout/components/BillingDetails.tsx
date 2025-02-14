@@ -8,7 +8,7 @@ const BillingDetails = () => {
   };
 
   const checkCep = async (e: React.FocusEvent<HTMLInputElement>) => {
-    const cep = e.target.value.replace(/\D/g, ""); // Remover caracteres não numéricos
+    const cep = e.target.value.replace(/\D/g, ""); 
     if (cep.length !== 8) return;
 
     try {

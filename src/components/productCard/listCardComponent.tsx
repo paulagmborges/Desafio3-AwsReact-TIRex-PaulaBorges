@@ -70,7 +70,6 @@ function ListProductComponent({ title, rows, paginate = false, isPopupOpen, clos
   if (error) return <p>Erro ao carregar produtos.</p>;
 
 
-
   return (
     <div className="flex flex-col items-center justify-center p-4 bg-[#F4F5F7]">
       <h2 className="text-2xl font-semibold mb-6 text-[#3A3A3A]">{title}</h2>

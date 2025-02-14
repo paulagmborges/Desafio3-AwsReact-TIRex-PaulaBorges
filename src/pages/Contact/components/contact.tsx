@@ -1,7 +1,4 @@
 import { useState } from "react";
-import local from "../../../assets/img-contact/local.png";
-import phone from "../../../assets/img-contact/phone.png";
-import clock from "../../../assets/img-contact/clock.png";
 
 const ContactInformation = () => {
   const [name, setName] = useState("");
@@ -52,17 +49,17 @@ const ContactInformation = () => {
       <div className="flex flex-row w-[1058px] h-[923px] justify-between items-start mt-[221px]  ">
         <div className="flex flex-col w-56 gap-2 items-center">
           <div className="font-poppins">
-            <img src={local} alt="" className="w-[22px] h-[28px]" />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/localPageContact.png" alt="" className="w-[22px] h-[28px]" />
             <h1 className="font-medium text-[24px]">Address</h1>
             <p className="font-regular text-[16px]">236 5th SE Avenue, New York NY10000, United States</p>
           </div>
           <div className="font-poppins">
-            <img src={phone} alt="" className="w-[22px] h-[22px]" />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/phone.png" alt="" className="w-[22px] h-[22px]" />
             <h1 className="font-medium text-[24px]">Phone</h1>
             <p className="font-regular text-[16px]">Mobile: +(84) 546-6789 Hotline: +(84) 456-6789</p>
           </div>
           <div className="font-poppins">
-            <img src={clock} alt="" className="w-[23px] h-[23px]" />
+            <img src="https://meu-app-imagens.s3.us-east-1.amazonaws.com/clockPageContact.png" alt="" className="w-[23px] h-[23px]" />
             <h1 className="font-medium text-[24px]">Working Time</h1>
             <p className="font-regular text-[16px]">Monday-Friday: 9:00 - 22:00 Saturday-Sunday: 9:00 - 21:00</p>
           </div>
