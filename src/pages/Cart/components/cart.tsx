@@ -5,12 +5,25 @@ import CartContext from "../../../context/CartContext";
 
 const CartComponent = () => {
     const cartContext = useContext(CartContext);
+   
+
+    const handleIncrease = (id: number) => {
+        if (increaseQuantity) {
+          increaseQuantity(id);
+        }
+      };
+      
+      const handleDecrease = (id: number) => {
+        if (decreaseQuantity) {
+          decreaseQuantity(id);
+        }
+      };
 
     if (!cartContext) {
         return <p>Erro: O contexto do carrinho não foi encontrado.</p>;
     }
 
-    const { cart, removeFromCart } = cartContext;
+    const { cart, removeFromCart,increaseQuantity, decreaseQuantity } = cartContext;
 
     const calculateSubtotal = () => {
         return cart.reduce((total, item) => total + Number(item.preco), 0);
@@ -45,7 +58,24 @@ const CartComponent = () => {
                                 <p className="ml-4 text-[16px]">{item.titulo}</p>
                             </div>
                             <p className="w-[120px] text-[16px] text-[#9F9F9F]">R$ {item.preco}</p>
-                            <p className="w-[100px] text-center">{item.quantidade}</p>
+                            <div className="flex items-center">
+                                <button
+                                    className="px-2 py-1 bg-gray-200 rounded-l text-lg"
+                                    onClick={() => handleDecrease(item.id)}
+                                >
+                                    −
+                                </button>
+
+                                <p className="w-[100px] text-center">{item.quantidade}</p>
+
+                                <button
+                                    className="px-2 py-1 bg-gray-200 rounded-r text-lg"
+                                    onClick={() => handleIncrease(item.id)}
+                                >
+                                    +
+                                </button>
+                            </div>
+
                             <p className="w-[120px] text-right">R$ {item.preco}</p>
                             <button
                                 className="w-[40px] flex justify-center text-[#C8A165]"
@@ -58,7 +88,7 @@ const CartComponent = () => {
                 )}
             </div>
 
-           
+
             <div className="w-1/3 h-[390px] flex flex-col bg-[#F9F1E7] p-8 rounded-lg gap-[20px] px-[75px] ">
                 <h1 className="font-semibold text-[32px] mb-6 text-center">Cart Totals</h1>
 
@@ -73,7 +103,7 @@ const CartComponent = () => {
                 </div>
                 <div className="flex justify-center">
                     <Link to="/checkout">
-                        <button className=" items-center w-[222px] h-[58px] border border-black rounded-xl hover:bg-black hover:text-white transition">
+                        <button className=" items-center w-[222px] h-[58px] border border-black border-solid rounded-xl hover:bg-black hover:text-white transition">
                             Check Out
                         </button>
                     </Link>
