@@ -30,9 +30,12 @@ Projeto desenvolvido para o desafio-3 do PB - AWS / REACTJS da Compass.uol. Furn
 
 
 ## 📥 Instalação e Execução
-### 1️⃣ Clone o repositório
+### 1️⃣ Clone o repositório e entre na pasta
 ```bash
   git clone git@github.com:paulagmborges/Desafio3-AwsReact-TIRex-PaulaBorges.git 
+```
+```bash
+cd Desafio3-AwsReact-TIRex-PaulaBorges
 ```
 
 ### 2️⃣ Instale as dependências
