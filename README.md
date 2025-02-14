@@ -1,7 +1,7 @@
 # 🛋️ Furniro - E-commerce de Móveis
 
 ## 📌 Sobre o Projeto
-Furniro é um e-commerce de móveis desenvolvido em ReactJS com TypeScript, utilizando JSON Server para simular um banco de dados. O projeto inclui funcionalidades como autenticação de usuários, carrinho de compras com Context API, paginação e filtros, carregamento dinâmico de dados e integração com a API ViaCEP.
+Projeto desenvolvido para o desafio-3 do PB - AWS / REACTJS da Compass.uol. Furniro é um e-commerce de móveis desenvolvido em ReactJS com TypeScript, utilizando JSON Server para simular um banco de dados. O projeto inclui funcionalidades como autenticação de usuários, carrinho de compras com Context API, paginação e filtros, carregamento dinâmico de dados e integração com a API ViaCEP.
 
 ## 🚀 Tecnologias Utilizadas
 - **ReactJS** + **TypeScript** + **Tailwind CSS**
@@ -40,7 +40,7 @@ Furniro é um e-commerce de móveis desenvolvido em ReactJS com TypeScript, util
   npm install
 ```
 
-### 3️⃣ Inicie o JSON Server e o projto
+### 3️⃣ Inicie o JSON Server e o projeto
 ```bash
   npm run start
 ```
@@ -53,5 +53,5 @@ Furniro é um e-commerce de móveis desenvolvido em ReactJS com TypeScript, util
 Paula Borges
 
 ---
-Projeto desenvolvido como parte do desafio 3 do PB - AWS REACTJS  DESAFIO 03 da Compass.uol
+
 
